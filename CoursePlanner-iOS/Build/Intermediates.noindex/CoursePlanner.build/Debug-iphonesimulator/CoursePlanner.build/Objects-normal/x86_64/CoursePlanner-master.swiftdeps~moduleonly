@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.3.1 (swiftlang-1200.0.39 clang-1200.0.32.6)"
+options: "a2d8bbf33f7a549e43c9cedb677e8471"
+build_time: [1602016936, 843495000]
+inputs:
+  "/Users/levinelson/Documents/GitHub/CoursePlanner/CoursePlanner/CoursePlanner/ContentView.swift": [1600395037, 145990441]
+  "/Users/levinelson/Documents/GitHub/CoursePlanner/CoursePlanner/CoursePlanner/MenuView.swift": [1600392547, 171975845]
+  "/Users/levinelson/Documents/GitHub/CoursePlanner/CoursePlanner/CoursePlanner/CoursePlannerApp.swift": [1600388835, 303907313]
