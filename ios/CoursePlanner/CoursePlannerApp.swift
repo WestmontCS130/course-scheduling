@@ -12,7 +12,7 @@ struct CoursePlannerApp: App {
     var body: some Scene {
         WindowGroup {
             //MainMenuView()
-            LoginView()
+            //LoginView()
         }
     }
 }

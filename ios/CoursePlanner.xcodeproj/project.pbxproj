@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2839B425300DBC00D44EB1 /* RegistrationView.swift */; };
 		FE4392C2252D19E600C93744 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4392C1252D19E600C93744 /* LoginView.swift */; };
 		FE97D9D82514366300B4A74F /* CoursePlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9D72514366300B4A74F /* CoursePlannerApp.swift */; };
 		FE97D9DA2514366300B4A74F /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9D92514366300B4A74F /* MainMenuView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE2839B425300DBC00D44EB1 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		FE4392C1252D19E600C93744 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE97D9D42514366300B4A74F /* CoursePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE97D9D72514366300B4A74F /* CoursePlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePlannerApp.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				FEEB3968252FB8DB00364D43 /* NavigationViewer.swift */,
+				FE2839B425300DBC00D44EB1 /* RegistrationView.swift */,
 				FE4392C1252D19E600C93744 /* LoginView.swift */,
 				FE97D9D72514366300B4A74F /* CoursePlannerApp.swift */,
 				FE97D9D92514366300B4A74F /* MainMenuView.swift */,
@@ -150,6 +153,7 @@
 				FE97D9DA2514366300B4A74F /* MainMenuView.swift in Sources */,
 				FE97D9E725143BE500B4A74F /* MenuView.swift in Sources */,
 				FEEB3969252FB8DB00364D43 /* NavigationViewer.swift in Sources */,
+				FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */,
 				FE4392C2252D19E600C93744 /* LoginView.swift in Sources */,
 				FE97D9D82514366300B4A74F /* CoursePlannerApp.swift in Sources */,
 			);
