@@ -5,6 +5,10 @@ function httpGet() {
     Http.open("GET", url);
     Http.send();
     Http.onreadystatechange = (e) => {
+        var response = '<p>' + Http.responseText + '</p>';
+        var newNode = $(newHTML);
+        newNode.hide();
+        $('#messages').append(newNode);
         return Http.responseText;
     }
 }
