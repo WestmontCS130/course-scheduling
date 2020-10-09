@@ -9,6 +9,7 @@ function httpGet() {
         var newNode = $(newHTML);
         newNode.hide();
         $('#messages').append(newNode);
+        newNode.slidedown(1000);
         return Http.responseText;
     }
 }
