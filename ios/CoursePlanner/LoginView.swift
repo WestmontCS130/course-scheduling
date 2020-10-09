@@ -12,6 +12,8 @@ struct LoginView: View {
     @State var phone: String = ""
     @State var password: String = ""
     
+    @State var registerLink: Bool = false
+    
     var body: some View {
         ZStack {
             Rectangle().foregroundColor(Color("LoginBackground")).ignoresSafeArea()
@@ -28,7 +30,8 @@ struct LoginView: View {
                 
                 Text("Don't have an account?")
                     .font(.headline)
-                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {
+                        self.registerLink.toggle()} ) {
                     Text("Register").accentColor(.white).padding( .horizontal, 50.0).padding().background(Color("LoginButton").cornerRadius(7.0))
                 }
                 Divider().padding(.horizontal, 28.0)

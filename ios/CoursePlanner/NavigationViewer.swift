@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct NavigationViewer: View {
+    
+   // @Binding var registerLink: Bool
+    
     var body: some View {
         return NavigationView {
             LoginView()
+           // if self.registerLink {
+           //     RegistrationView()
+           // }
             
        }
     }
