@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RegistrationView: View {
     
+    @ObservedObject var viewRouter = ViewRouter()
+    
     @ObservedObject var account = Account()
     
     @State var phone: String = ""
@@ -62,6 +64,9 @@ struct RegistrationView: View {
                     self.account.PhoneNumber = phone
                     self.account.stringText = password1
                     self.sendAccount()
+                    DispatchQueue.main.asyncAfter (deadline: .now() + 1.0) {
+                        self.viewRouter.currentPage = "Login"
+                    }
                 } else {
                     self.badRegistration = true
                     self.goodRegistration = false
