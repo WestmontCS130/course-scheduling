@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainMenuView: View {
     
+    @ObservedObject var viewRouter = ViewRouter()
+    
     @State var showMenu = false
     
     var body: some View {
@@ -42,7 +44,8 @@ struct MainMenuView: View {
                         .imageScale(.large)
                 }
             ))
-            }
+        }
+        .padding(.top)
         }
     }
 

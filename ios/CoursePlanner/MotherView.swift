@@ -31,9 +31,11 @@ struct MotherView: View {
             } else if viewRouter.currentPage == "Register" {
                 RegistrationView(viewRouter: viewRouter)
             } else if viewRouter.currentPage == "MainMenu" {
-                MainMenuView()
+                MainMenuView(viewRouter: viewRouter)
+            } else if viewRouter.currentPage == "CS-Schedule" {
+                ScheduleView()
             }
-        }
+        }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
 }
 
