@@ -43,7 +43,6 @@ struct ScheduleView: View {
         let fallCourses = [first, second, third]
         
         let springCourses = [fourth, fifth, sixth, seventh]
-        
         ZStack {
             Rectangle().foregroundColor(Color("LoginBackground")).ignoresSafeArea()
             List {
