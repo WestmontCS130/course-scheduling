@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.css">
+
+    <title>4 Year Schedule</title>
+<head>
+
+    <style>
+        table#t01 { 
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 90%;
+        }
+        table#t02 { 
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 90%;
+        }
+
+        .parent {
+        width: 100%;
+        border: 5px solid rgb(157, 34, 54);
+        float: left;
+}
+
+        .child {
+         width: 90%;
+         padding: 20%;
+         border: 4px solid black;
+         margin: .5em auto;
+}
+
+        .twins {
+         width: 50%;
+         padding: 1em;
+         border: 4px solid black;
+         float: left;
+}
+    </style>
+
+<head>
+
+    <h1 class="text-center">4 Year Schedule</h1>
+
+    <a href="home.html" type="button" class="btn btn-right westmontRed">Back</a>
+    <a href="courseSite.html" type="button" class="btn btn-right westmontRed">LogOut</a>
+
+    <body>
+        <table id="t01">
+            <tr>
+                <th>Year</th>
+                <th>Course Number</th>
+                <th>Course Name</th>
+                <th>Professor</th>
+                <th>Credits</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    </body>
+
+    <body>
+          <div class="parent">
+            <p></p>
+            <div class="child">
+            </div>
+            <div class="twins">
+              <p></p>
+            </div>
+            <div class="twins">
+              <p></p>
+            </div>
+          </div>
+
+    </body>
+
+
+
+
+</head>
