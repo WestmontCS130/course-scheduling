@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE19E5992542804000B05378 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19E5982542804000B05378 /* CardView.swift */; };
 		FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2839B425300DBC00D44EB1 /* RegistrationView.swift */; };
 		FE4392C2252D19E600C93744 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4392C1252D19E600C93744 /* LoginView.swift */; };
+		FE8CE8CA2530EB9800E34E35 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8CE8C92530EB9800E34E35 /* Account.swift */; };
 		FE97D9D82514366300B4A74F /* CoursePlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9D72514366300B4A74F /* CoursePlannerApp.swift */; };
 		FE97D9DA2514366300B4A74F /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9D92514366300B4A74F /* MainMenuView.swift */; };
 		FE97D9DC2514366500B4A74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE97D9DB2514366500B4A74F /* Assets.xcassets */; };
 		FE97D9DF2514366500B4A74F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE97D9DE2514366500B4A74F /* Preview Assets.xcassets */; };
 		FE97D9E725143BE500B4A74F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9E625143BE500B4A74F /* MenuView.swift */; };
-		FEEB3969252FB8DB00364D43 /* NavigationViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEB3968252FB8DB00364D43 /* NavigationViewer.swift */; };
+		FEB4A55D25425E4000BFE2D9 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A55C25425E4000BFE2D9 /* MotherView.swift */; };
+		FEB4A56125426A2400BFE2D9 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE19E5982542804000B05378 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FE2839B425300DBC00D44EB1 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		FE4392C1252D19E600C93744 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FE8CE8C92530EB9800E34E35 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		FE97D9D42514366300B4A74F /* CoursePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE97D9D72514366300B4A74F /* CoursePlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePlannerApp.swift; sourceTree = "<group>"; };
 		FE97D9D92514366300B4A74F /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
@@ -27,7 +32,8 @@
 		FE97D9DE2514366500B4A74F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE97D9E02514366500B4A74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE97D9E625143BE500B4A74F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		FEEB3968252FB8DB00364D43 /* NavigationViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewer.swift; sourceTree = "<group>"; };
+		FEB4A55C25425E4000BFE2D9 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +66,13 @@
 		FE97D9D62514366300B4A74F /* CoursePlanner */ = {
 			isa = PBXGroup;
 			children = (
-				FEEB3968252FB8DB00364D43 /* NavigationViewer.swift */,
+				FEB4A55C25425E4000BFE2D9 /* MotherView.swift */,
+				FE8CE8C92530EB9800E34E35 /* Account.swift */,
 				FE2839B425300DBC00D44EB1 /* RegistrationView.swift */,
 				FE4392C1252D19E600C93744 /* LoginView.swift */,
 				FE97D9D72514366300B4A74F /* CoursePlannerApp.swift */,
+				FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */,
+				FE19E5982542804000B05378 /* CardView.swift */,
 				FE97D9D92514366300B4A74F /* MainMenuView.swift */,
 				FE97D9E625143BE500B4A74F /* MenuView.swift */,
 				FE97D9DB2514366500B4A74F /* Assets.xcassets */,
@@ -71,7 +80,7 @@
 				FE97D9DD2514366500B4A74F /* Preview Content */,
 			);
 			path = CoursePlanner;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		FE97D9DD2514366500B4A74F /* Preview Content */ = {
 			isa = PBXGroup;
@@ -151,11 +160,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE97D9DA2514366300B4A74F /* MainMenuView.swift in Sources */,
+				FE19E5992542804000B05378 /* CardView.swift in Sources */,
+				FEB4A55D25425E4000BFE2D9 /* MotherView.swift in Sources */,
 				FE97D9E725143BE500B4A74F /* MenuView.swift in Sources */,
-				FEEB3969252FB8DB00364D43 /* NavigationViewer.swift in Sources */,
 				FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */,
 				FE4392C2252D19E600C93744 /* LoginView.swift in Sources */,
+				FEB4A56125426A2400BFE2D9 /* ScheduleView.swift in Sources */,
 				FE97D9D82514366300B4A74F /* CoursePlannerApp.swift in Sources */,
+				FE8CE8CA2530EB9800E34E35 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
