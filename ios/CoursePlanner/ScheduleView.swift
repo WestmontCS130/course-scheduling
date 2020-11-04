@@ -24,8 +24,7 @@ struct CourseRow: View {
 
 struct ScheduleView: View {
     //let courses = Bundle.main.decode([CourseSchedule].self, from: "CourseData.json")
-    
-   
+
     
     var body: some View {
         
@@ -43,6 +42,8 @@ struct ScheduleView: View {
         let fallCourses = [first, second, third]
         
         let springCourses = [fourth, fifth, sixth, seventh]
+        
+        
         ZStack {
             Rectangle().foregroundColor(Color("LoginBackground")).ignoresSafeArea()
             List {
