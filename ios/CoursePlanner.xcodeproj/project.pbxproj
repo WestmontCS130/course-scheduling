@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE08619025524D5C00C6D074 /* RequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE08618F25524D5C00C6D074 /* RequirementsView.swift */; };
+		FE1366BB254F6D0F00F4E661 /* Requirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1366BA254F6D0F00F4E661 /* Requirements.swift */; };
 		FE19E5992542804000B05378 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19E5982542804000B05378 /* CardView.swift */; };
 		FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2839B425300DBC00D44EB1 /* RegistrationView.swift */; };
 		FE4392C2252D19E600C93744 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4392C1252D19E600C93744 /* LoginView.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE08618F25524D5C00C6D074 /* RequirementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementsView.swift; sourceTree = "<group>"; };
+		FE1366BA254F6D0F00F4E661 /* Requirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requirements.swift; sourceTree = "<group>"; };
 		FE19E5982542804000B05378 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FE2839B425300DBC00D44EB1 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		FE4392C1252D19E600C93744 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				FE4392C1252D19E600C93744 /* LoginView.swift */,
 				FE97D9D72514366300B4A74F /* CoursePlannerApp.swift */,
 				FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */,
+				FE08618F25524D5C00C6D074 /* RequirementsView.swift */,
+				FE1366BA254F6D0F00F4E661 /* Requirements.swift */,
 				FE19E5982542804000B05378 /* CardView.swift */,
 				FE97D9D92514366300B4A74F /* MainMenuView.swift */,
 				FE97D9E625143BE500B4A74F /* MenuView.swift */,
@@ -164,10 +170,12 @@
 				FEB4A55D25425E4000BFE2D9 /* MotherView.swift in Sources */,
 				FE97D9E725143BE500B4A74F /* MenuView.swift in Sources */,
 				FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */,
+				FE08619025524D5C00C6D074 /* RequirementsView.swift in Sources */,
 				FE4392C2252D19E600C93744 /* LoginView.swift in Sources */,
 				FEB4A56125426A2400BFE2D9 /* ScheduleView.swift in Sources */,
 				FE97D9D82514366300B4A74F /* CoursePlannerApp.swift in Sources */,
 				FE8CE8CA2530EB9800E34E35 /* Account.swift in Sources */,
+				FE1366BB254F6D0F00F4E661 /* Requirements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
