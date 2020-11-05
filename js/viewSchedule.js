@@ -14,10 +14,7 @@ $(document).ready(function() {
         $.ajax({
             url: 'https://class-scheduling-api.herokuapp.com/schedule',
             type: 'GET', // POST  PUT  PATCH  DELETE  GET
-            data: {
-                // Any data to be sent to server can be created here.  This api doesn't require data, but a POST call will
-                'numberOfWords': 10
-            },
+            crossDomain: true,
             dataType: 'json',
             success: function(data) {
                 // This is the success function event.
