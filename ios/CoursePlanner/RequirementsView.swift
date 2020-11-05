@@ -24,14 +24,16 @@ struct RequirementsView: View {
     }
     
     var body: some View {
+        
+        let requirements = ["CS 10", "CS 15", "CS 30"]
+            
         ZStack {
             Rectangle().foregroundColor(Color("LoginBackground")).ignoresSafeArea()
             List {
-                Section(header: Text("Fall 2020")) {
-                    Text("Test")
-                }
-                Section(header: Text("Spring 2021")) {
-                    Text("Test")
+                Section(header: Text("Requirements")) {
+                    Text(requirements[0])
+                    Text(requirements[1])
+                    Text(requirements[2])
 
                 }
             }
