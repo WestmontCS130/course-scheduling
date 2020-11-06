@@ -52,8 +52,9 @@ struct MenuView: View {
 
             Spacer()
         }
-        .padding()
+        .padding(.leading, 130)
         .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color.white)
     }
 }
 
