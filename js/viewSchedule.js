@@ -16,6 +16,9 @@ $(document).ready(function() {
             type: 'GET', // POST  PUT  PATCH  DELETE  GET
             crossDomain: true,
             dataType: 'json',
+            beforeSend: function(xhr) {
+                xhr.withCredentials = true;
+            },
             success: function(data) {
                 // This is the success function event.
                 // Notice the data is passed as a parameter.  It is in json format can you can reference the properties data.message and data.success.
