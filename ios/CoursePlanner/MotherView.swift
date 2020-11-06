@@ -34,6 +34,8 @@ struct MotherView: View {
                 MainMenuView(viewRouter: viewRouter)
             } else if viewRouter.currentPage == "CS-Schedule" {
                 ScheduleView()
+            } else if viewRouter.currentPage == "Requirements" {
+                RequirementsView()
             }
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }

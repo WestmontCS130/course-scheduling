@@ -41,6 +41,14 @@ struct MenuView: View {
                 }
             }
             .padding(.top, 30)
+            
+            HStack {
+                Image(systemName: "calendar.circle").foregroundColor(Color("LoginButton")).imageScale(.large)
+                NavigationLink(
+                    destination: RequirementsView()) {Text("View CS Requirements").font(.headline)
+                }
+            }
+            .padding(.top, 30)
 
             Spacer()
         }
