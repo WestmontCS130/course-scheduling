@@ -16,6 +16,9 @@ $(document).ready(function() {
             type: 'GET', // POST  PUT  PATCH  DELETE  GET
             crossDomain: true,
             dataType: 'json',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+              },
             beforeSend: function(xhr) {
                 xhr.withCredentials = true;                
             },
