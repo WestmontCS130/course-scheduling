@@ -14,7 +14,7 @@ struct MainMenuView: View {
     @State var showMenu = false
     
     var body: some View {
-        
+
         let drag = DragGesture()
             .onEnded {
                 if $0.translation.width < -100 {
@@ -23,16 +23,20 @@ struct MainMenuView: View {
                     }
                 }
             }
+        
         return NavigationView {
             GeometryReader { geometry in
-                ZStack(alignment: .leading){
+                ZStack(alignment: .leading) {
                     if self.showMenu {
                         MenuView()
-                            .frame(width: geometry.size.width/2)
+                            .frame(width: 440)
+                            //.frame(width: geometry.size.width/2)
                             .transition(.move(edge: .leading))
                     }
-                }
+                }.padding(.top, 150)
+                
                 .gesture(drag)
+                .background(Image("mainPageBG")).frame(width: 200, height: 200)
             }
             .navigationBarItems(leading: (
                 Button(action: {
@@ -40,12 +44,12 @@ struct MainMenuView: View {
                         self.showMenu.toggle()
                     }
                 }) {
-                    Image(systemName: "line.horizontal.3")
-                        .imageScale(.large)
+                    Image("hamburger")
+                        .resizable()
+                        .frame(width: 40, height: 40, alignment: .center)
                 }
             ))
         }
-        .padding(.top)
         }
     }
 
