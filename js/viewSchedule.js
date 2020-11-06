@@ -15,10 +15,7 @@ $(document).ready(function() {
             url: 'https://class-scheduling-api.herokuapp.com/schedule',
             type: 'GET', // POST  PUT  PATCH  DELETE  GET
             crossDomain: true,
-            dataType: 'json',
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-              },
+            dataType: 'json',            
             beforeSend: function(xhr) {
                 xhr.withCredentials = true;                
             },
