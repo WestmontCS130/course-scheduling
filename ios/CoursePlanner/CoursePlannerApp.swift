@@ -11,8 +11,7 @@ import SwiftUI
 struct CoursePlannerApp: App {
     var body: some Scene {
         WindowGroup {
-            //MainMenuView()
-            //LoginView()
+            MotherView(viewRouter: ViewRouter())
         }
     }
 }
