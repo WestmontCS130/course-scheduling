@@ -12,32 +12,32 @@ struct MenuView: View {
         VStack(alignment: .leading) {
             HStack {
                 Image(systemName: "person").foregroundColor(Color("LoginButton")).imageScale(.large)
-                Text("Profile").font(.headline)
+                Text("Profile").font(.headline).foregroundColor(Color.blue)
             }
             .padding(.top, 30)
            
             HStack {
                 Image(systemName: "chevron.up.square").foregroundColor(Color("LoginButton")).imageScale(.large)
-                Text("Upload Complete Classes").font(.headline)
+                Text("Upload Complete Classes").font(.headline).foregroundColor(Color.blue)
             }
             .padding(.top, 30)
             
             HStack {
                 Image(systemName: "calendar").foregroundColor(Color("LoginButton")).imageScale(.large)
-                Text("View Previous Classes").font(.headline)
+                Text("View Previous Classes").font(.headline).foregroundColor(Color.blue)
             }
             .padding(.top, 30)
             
             HStack {
                 Image(systemName: "gear").foregroundColor(Color("LoginButton")).imageScale(.large)
-                Text("Settings").font(.headline)
+                Text("Settings").font(.headline).foregroundColor(Color.blue)
             }
             .padding(.top, 30)
             
             HStack {
                 Image(systemName: "calendar.circle").foregroundColor(Color("LoginButton")).imageScale(.large)
                 NavigationLink(
-                    destination: ScheduleView()) {Text("View Westmont CS Schedule").font(.headline)
+                    destination: ScheduleView()) {Text("View Westmont CS Schedule").font(.headline).foregroundColor(Color.blue)
                 }
             }
             .padding(.top, 30)
@@ -45,7 +45,7 @@ struct MenuView: View {
             HStack {
                 Image(systemName: "calendar.circle").foregroundColor(Color("LoginButton")).imageScale(.large)
                 NavigationLink(
-                    destination: RequirementsView()) {Text("View CS Requirements").font(.headline)
+                    destination: RequirementsView()) {Text("View CS Requirements").font(.headline).foregroundColor(Color.blue)
                 }
             }
             .padding(.top, 30)

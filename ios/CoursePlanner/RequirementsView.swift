@@ -19,8 +19,12 @@ struct RequirementsView: View {
             
         ZStack {
             Rectangle().foregroundColor(Color("LoginBackground")).ignoresSafeArea()
-            List(requirements) { requirement in
-                Text(requirement.RequirementName)
+            List{
+                Section(header: Text("Requirements for CS")) {
+                    ForEach(requirements) { requirement in
+                        Text(requirement.RequirementName)
+                    }
+                }
             }
             .onAppear {
                 Api().getRequirements {(requirements) in
