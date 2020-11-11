@@ -1,1 +1,9 @@
-
+func testPasswordLength() {
+        let password = "chickenpotpie"
+        XCTAssertEqual(password.count, 13)
+    }
+    
+    func testPasswordUpperCase() {
+        let password = "chickenPotPie"
+        XCTAssertEqual(password.contains("P"),true)
+    }
