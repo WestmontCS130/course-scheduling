@@ -7,5 +7,4 @@ function phonenumber(inputtxt) {
         return false;
     }
 }
-
 module.exports = phonenumber;
