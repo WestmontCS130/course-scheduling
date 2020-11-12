@@ -1,12 +1,13 @@
-    function compare(inputtxt){
-        var psw1 = document.getElementById('psw1').value;
-
-        if (psw1.match('psw1')){
-            return true;
-        }
-        else{
-            //alert ("passwords do not match");
-            return false;
-    }
+function password(inputtxt) { 
+    //var input = document.getElementById("psw1").value; 
+    var pattern= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    if (inputtxt.match(pattern)){
+        return true;
 }
-module.exports = compare;
+    else {
+        //alert ("invalid password");
+        return false;
+    }
+} 
+module.exports = password;
+Collapse
