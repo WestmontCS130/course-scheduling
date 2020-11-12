@@ -28,3 +28,9 @@ html.westmontAir {
     background-color: rgb(157, 34, 54);
     font-weight: bold;
 }
+
+.upper-left-corner {
+    position: absolute;
+    top: 70px;
+    right: 15px;    
+}

@@ -15,15 +15,15 @@ $(document).ready(function() {
             url: 'https://class-scheduling-api.herokuapp.com/schedule',
             type: 'GET', // POST  PUT  PATCH  DELETE  GET
             crossDomain: true,
-            dataType: 'json',
+            dataType: 'json',             
             beforeSend: function(xhr) {
-                xhr.withCredentials = true;
+                xhr.withCredentials = true;                
             },
             success: function(data) {
                 // This is the success function event.
                 // Notice the data is passed as a parameter.  It is in json format can you can reference the properties data.message and data.success.
                 // https://dog.ceo/dog-api/ The documentation tells you the layout of the return data.
-                alert('Data: ' + data);
+                alert('Data: ' + data.stringify);
 
                 //$("#DogPic").attr("src", data.message);
             },
