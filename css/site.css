@@ -1,5 +1,5 @@
-body,
-html {
+body.westmontAir,
+html.westmontAir {
     background-image: url('../images/mainPageBG.jpg');
     background-repeat: no-repeat;
     background-size: cover;
