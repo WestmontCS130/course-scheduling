@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		FE08619025524D5C00C6D074 /* RequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE08618F25524D5C00C6D074 /* RequirementsView.swift */; };
 		FE1366BB254F6D0F00F4E661 /* Requirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1366BA254F6D0F00F4E661 /* Requirements.swift */; };
 		FE19E5992542804000B05378 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19E5982542804000B05378 /* CardView.swift */; };
+		FE27BAE42561F44E008F1A58 /* CoursePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27BAE32561F44E008F1A58 /* CoursePlannerTests.swift */; };
 		FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2839B425300DBC00D44EB1 /* RegistrationView.swift */; };
 		FE4392C2252D19E600C93744 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4392C1252D19E600C93744 /* LoginView.swift */; };
 		FE8CE8CA2530EB9800E34E35 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8CE8C92530EB9800E34E35 /* Account.swift */; };
@@ -22,10 +23,36 @@
 		FEB4A56125426A2400BFE2D9 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FE27BAE62561F44E008F1A58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE97D9CC2514366300B4A74F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE97D9D32514366300B4A74F;
+			remoteInfo = CoursePlanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE49FA7D255B864300BA674F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FE08618F25524D5C00C6D074 /* RequirementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementsView.swift; sourceTree = "<group>"; };
 		FE1366BA254F6D0F00F4E661 /* Requirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requirements.swift; sourceTree = "<group>"; };
 		FE19E5982542804000B05378 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FE27BAE12561F44E008F1A58 /* CoursePlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoursePlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE27BAE32561F44E008F1A58 /* CoursePlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePlannerTests.swift; sourceTree = "<group>"; };
+		FE27BAE52561F44E008F1A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE2839B425300DBC00D44EB1 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		FE4392C1252D19E600C93744 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE8CE8C92530EB9800E34E35 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -41,6 +68,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FE27BADE2561F44E008F1A58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE97D9D12514366300B4A74F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +85,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE27BAE22561F44E008F1A58 /* CoursePlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE27BAE32561F44E008F1A58 /* CoursePlannerTests.swift */,
+				FE27BAE52561F44E008F1A58 /* Info.plist */,
+			);
+			path = CoursePlannerTests;
+			sourceTree = "<group>";
+		};
 		FE97D9CB2514366300B4A74F = {
 			isa = PBXGroup;
 			children = (
 				FE97D9D62514366300B4A74F /* CoursePlanner */,
+				FE27BAE22561F44E008F1A58 /* CoursePlannerTests */,
 				FE97D9D52514366300B4A74F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				FE97D9D42514366300B4A74F /* CoursePlanner.app */,
+				FE27BAE12561F44E008F1A58 /* CoursePlannerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,11 +115,11 @@
 		FE97D9D62514366300B4A74F /* CoursePlanner */ = {
 			isa = PBXGroup;
 			children = (
+				FE97D9D72514366300B4A74F /* CoursePlannerApp.swift */,
 				FEB4A55C25425E4000BFE2D9 /* MotherView.swift */,
 				FE8CE8C92530EB9800E34E35 /* Account.swift */,
 				FE2839B425300DBC00D44EB1 /* RegistrationView.swift */,
 				FE4392C1252D19E600C93744 /* LoginView.swift */,
-				FE97D9D72514366300B4A74F /* CoursePlannerApp.swift */,
 				FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */,
 				FE08618F25524D5C00C6D074 /* RequirementsView.swift */,
 				FE1366BA254F6D0F00F4E661 /* Requirements.swift */,
@@ -99,6 +144,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FE27BAE02561F44E008F1A58 /* CoursePlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE27BAE82561F44E008F1A58 /* Build configuration list for PBXNativeTarget "CoursePlannerTests" */;
+			buildPhases = (
+				FE27BADD2561F44E008F1A58 /* Sources */,
+				FE27BADE2561F44E008F1A58 /* Frameworks */,
+				FE27BADF2561F44E008F1A58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE27BAE72561F44E008F1A58 /* PBXTargetDependency */,
+			);
+			name = CoursePlannerTests;
+			productName = CoursePlannerTests;
+			productReference = FE27BAE12561F44E008F1A58 /* CoursePlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FE97D9D32514366300B4A74F /* CoursePlanner */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE97D9E32514366500B4A74F /* Build configuration list for PBXNativeTarget "CoursePlanner" */;
@@ -106,6 +169,7 @@
 				FE97D9D02514366300B4A74F /* Sources */,
 				FE97D9D12514366300B4A74F /* Frameworks */,
 				FE97D9D22514366300B4A74F /* Resources */,
+				FE49FA7D255B864300BA674F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,16 +186,20 @@
 		FE97D9CC2514366300B4A74F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					FE27BAE02561F44E008F1A58 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = FE97D9D32514366300B4A74F;
+					};
 					FE97D9D32514366300B4A74F = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
 			buildConfigurationList = FE97D9CF2514366300B4A74F /* Build configuration list for PBXProject "CoursePlanner" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -144,11 +212,19 @@
 			projectRoot = "";
 			targets = (
 				FE97D9D32514366300B4A74F /* CoursePlanner */,
+				FE27BAE02561F44E008F1A58 /* CoursePlannerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FE27BADF2561F44E008F1A58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE97D9D22514366300B4A74F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +237,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FE27BADD2561F44E008F1A58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE27BAE42561F44E008F1A58 /* CoursePlannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE97D9D02514366300B4A74F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,7 +265,57 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FE27BAE72561F44E008F1A58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE97D9D32514366300B4A74F /* CoursePlanner */;
+			targetProxy = FE27BAE62561F44E008F1A58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		FE27BAE92561F44E008F1A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FK6S4VW734;
+				INFOPLIST_FILE = CoursePlannerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WestmontCS130.CoursePlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoursePlanner.app/CoursePlanner";
+			};
+			name = Debug;
+		};
+		FE27BAEA2561F44E008F1A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FK6S4VW734;
+				INFOPLIST_FILE = CoursePlannerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WestmontCS130.CoursePlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoursePlanner.app/CoursePlanner";
+			};
+			name = Release;
+		};
 		FE97D9E12514366500B4A74F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -217,6 +351,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -278,6 +413,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -304,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CoursePlanner/Preview Content\"";
 				DEVELOPMENT_TEAM = FK6S4VW734;
 				ENABLE_PREVIEWS = YES;
@@ -326,6 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CoursePlanner/Preview Content\"";
 				DEVELOPMENT_TEAM = FK6S4VW734;
 				ENABLE_PREVIEWS = YES;
@@ -345,6 +483,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FE27BAE82561F44E008F1A58 /* Build configuration list for PBXNativeTarget "CoursePlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE27BAE92561F44E008F1A58 /* Debug */,
+				FE27BAEA2561F44E008F1A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FE97D9CF2514366300B4A74F /* Build configuration list for PBXProject "CoursePlanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

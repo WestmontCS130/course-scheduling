@@ -45,7 +45,7 @@ struct MenuView: View {
             HStack {
                 Image(systemName: "calendar.circle").foregroundColor(Color("LoginButton")).imageScale(.large)
                 NavigationLink(
-                    destination: RequirementsView()) {Text("View CS Requirements").font(.headline).foregroundColor(Color.blue)
+                    destination: RequirementsView()) {Text("View Requirements").font(.headline).foregroundColor(Color.blue)
                 }
             }
             .padding(.top, 30)

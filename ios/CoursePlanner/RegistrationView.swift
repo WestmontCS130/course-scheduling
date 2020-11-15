@@ -7,6 +7,42 @@
 
 import SwiftUI
 
+extension String {
+    
+    //Checks to see if string matches a phone number
+    // got from stackOverflow
+    var isPhoneNumber: Bool {
+        do {
+            let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.phoneNumber.rawValue)
+            let matches = detector.matches(in: self, options: [], range: NSRange(location: 0, length: self.count))
+            if let res = matches.first {
+                return res.resultType == .phoneNumber && res.range.location == 0 && res.range.length == self.count
+            } else {
+                return false
+            }
+        } catch {
+            return false
+        }
+    }
+}
+
+class Register {
+    let phone: String
+    let password1: String
+    let password2: String
+    
+    init(phone: String, password1: String, password2: String) {
+        self.phone = phone
+        self.password1 = password1
+        self.password2 = password2
+    }
+    
+    
+    func isGoodRegistration() -> Bool {
+        return phone.isPhoneNumber && (password1.contains(password2))
+    }
+}
+
 struct RegistrationView: View {
     
     @ObservedObject var viewRouter = ViewRouter()
