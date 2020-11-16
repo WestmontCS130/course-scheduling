@@ -10,7 +10,6 @@
 		FE08619025524D5C00C6D074 /* RequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE08618F25524D5C00C6D074 /* RequirementsView.swift */; };
 		FE1366BB254F6D0F00F4E661 /* Requirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1366BA254F6D0F00F4E661 /* Requirements.swift */; };
 		FE19E5992542804000B05378 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19E5982542804000B05378 /* CardView.swift */; };
-		FE27BAF22561F62A008F1A58 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE27BAF12561F62A008F1A58 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2839B425300DBC00D44EB1 /* RegistrationView.swift */; };
 		FE3FD8E4256201AB00FE5F12 /* CoursePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3FD8E3256201AB00FE5F12 /* CoursePlannerTests.swift */; };
 		FE4392C2252D19E600C93744 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4392C1252D19E600C93744 /* LoginView.swift */; };
@@ -20,7 +19,7 @@
 		FE97D9E725143BE500B4A74F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9E625143BE500B4A74F /* MenuView.swift */; };
 		FEB4A55D25425E4000BFE2D9 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A55C25425E4000BFE2D9 /* MotherView.swift */; };
 		FEB4A56125426A2400BFE2D9 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */; };
-		FEDDC9222561FCAA0021CC52 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE27BAF12561F62A008F1A58 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FEFD13DB2562FC1100737C7F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFD13DA2562FC1100737C7F /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FE49FA7D255B864300BA674F /* Embed Frameworks */ = {
+		FE950CD92562FADA00B3DA47 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FEDDC9222561FCAA0021CC52 /* XCTest.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -51,7 +49,6 @@
 		FE08618F25524D5C00C6D074 /* RequirementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementsView.swift; sourceTree = "<group>"; };
 		FE1366BA254F6D0F00F4E661 /* Requirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requirements.swift; sourceTree = "<group>"; };
 		FE19E5982542804000B05378 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		FE27BAF12561F62A008F1A58 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = "../../../Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework"; sourceTree = SOURCE_ROOT; };
 		FE2839B425300DBC00D44EB1 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		FE3FD8E1256201AB00FE5F12 /* CoursePlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoursePlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3FD8E3256201AB00FE5F12 /* CoursePlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePlannerTests.swift; sourceTree = "<group>"; };
@@ -67,6 +64,7 @@
 		FE97D9E625143BE500B4A74F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FEB4A55C25425E4000BFE2D9 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		FEFD13DA2562FC1100737C7F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE27BAF22561F62A008F1A58 /* XCTest.framework in Frameworks */,
+				FEFD13DB2562FC1100737C7F /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +89,7 @@
 		FE27BAF02561F62A008F1A58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE27BAF12561F62A008F1A58 /* XCTest.framework */,
+				FEFD13DA2562FC1100737C7F /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,7 +179,7 @@
 				FE97D9D02514366300B4A74F /* Sources */,
 				FE97D9D12514366300B4A74F /* Frameworks */,
 				FE97D9D22514366300B4A74F /* Resources */,
-				FE49FA7D255B864300BA674F /* Embed Frameworks */,
+				FE950CD92562FADA00B3DA47 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FK6S4VW734;
 				INFOPLIST_FILE = CoursePlannerTests/Info.plist;
@@ -309,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FK6S4VW734;
 				ENABLE_TESTABILITY = YES;
@@ -458,7 +458,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CoursePlanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = WestmontCS130.CoursePlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -483,7 +483,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CoursePlanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -491,7 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = WestmontCS130.CoursePlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
