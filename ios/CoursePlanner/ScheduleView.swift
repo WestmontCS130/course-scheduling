@@ -56,7 +56,7 @@ struct ScheduleView: View {
                         ForEach(springCourses) { item in
                             CourseRow(course: item)
                         }
-                }
+                } .navigationBarTitle("2020-2021")
             }
 
                 //CardView(name: "CS010 Design and Implementation of Solutions to Computational Problems", category: "CS", semester: "Fall", year: "2020")
