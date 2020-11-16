@@ -10,21 +10,21 @@
 		FE08619025524D5C00C6D074 /* RequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE08618F25524D5C00C6D074 /* RequirementsView.swift */; };
 		FE1366BB254F6D0F00F4E661 /* Requirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1366BA254F6D0F00F4E661 /* Requirements.swift */; };
 		FE19E5992542804000B05378 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19E5982542804000B05378 /* CardView.swift */; };
-		FE27BAE42561F44E008F1A58 /* CoursePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27BAE32561F44E008F1A58 /* CoursePlannerTests.swift */; };
+		FE27BAF22561F62A008F1A58 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE27BAF12561F62A008F1A58 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2839B425300DBC00D44EB1 /* RegistrationView.swift */; };
+		FE3FD8E4256201AB00FE5F12 /* CoursePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3FD8E3256201AB00FE5F12 /* CoursePlannerTests.swift */; };
 		FE4392C2252D19E600C93744 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4392C1252D19E600C93744 /* LoginView.swift */; };
 		FE8CE8CA2530EB9800E34E35 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8CE8C92530EB9800E34E35 /* Account.swift */; };
 		FE97D9D82514366300B4A74F /* CoursePlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9D72514366300B4A74F /* CoursePlannerApp.swift */; };
 		FE97D9DA2514366300B4A74F /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9D92514366300B4A74F /* MainMenuView.swift */; };
-		FE97D9DC2514366500B4A74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE97D9DB2514366500B4A74F /* Assets.xcassets */; };
-		FE97D9DF2514366500B4A74F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE97D9DE2514366500B4A74F /* Preview Assets.xcassets */; };
 		FE97D9E725143BE500B4A74F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9E625143BE500B4A74F /* MenuView.swift */; };
 		FEB4A55D25425E4000BFE2D9 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A55C25425E4000BFE2D9 /* MotherView.swift */; };
 		FEB4A56125426A2400BFE2D9 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */; };
+		FEDDC9222561FCAA0021CC52 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE27BAF12561F62A008F1A58 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FE27BAE62561F44E008F1A58 /* PBXContainerItemProxy */ = {
+		FE3FD8E6256201AB00FE5F12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE97D9CC2514366300B4A74F /* Project object */;
 			proxyType = 1;
@@ -36,13 +36,14 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		FE49FA7D255B864300BA674F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FEDDC9222561FCAA0021CC52 /* XCTest.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -50,10 +51,11 @@
 		FE08618F25524D5C00C6D074 /* RequirementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementsView.swift; sourceTree = "<group>"; };
 		FE1366BA254F6D0F00F4E661 /* Requirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requirements.swift; sourceTree = "<group>"; };
 		FE19E5982542804000B05378 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		FE27BAE12561F44E008F1A58 /* CoursePlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoursePlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE27BAE32561F44E008F1A58 /* CoursePlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePlannerTests.swift; sourceTree = "<group>"; };
-		FE27BAE52561F44E008F1A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE27BAF12561F62A008F1A58 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = "../../../Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework"; sourceTree = SOURCE_ROOT; };
 		FE2839B425300DBC00D44EB1 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		FE3FD8E1256201AB00FE5F12 /* CoursePlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoursePlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3FD8E3256201AB00FE5F12 /* CoursePlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePlannerTests.swift; sourceTree = "<group>"; };
+		FE3FD8E5256201AB00FE5F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE4392C1252D19E600C93744 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE8CE8C92530EB9800E34E35 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		FE97D9D42514366300B4A74F /* CoursePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +70,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FE27BADE2561F44E008F1A58 /* Frameworks */ = {
+		FE3FD8DE256201AB00FE5F12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,17 +81,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE27BAF22561F62A008F1A58 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FE27BAE22561F44E008F1A58 /* CoursePlannerTests */ = {
+		FE27BAF02561F62A008F1A58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE27BAE32561F44E008F1A58 /* CoursePlannerTests.swift */,
-				FE27BAE52561F44E008F1A58 /* Info.plist */,
+				FE27BAF12561F62A008F1A58 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE3FD8E2256201AB00FE5F12 /* CoursePlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE3FD8E3256201AB00FE5F12 /* CoursePlannerTests.swift */,
+				FE3FD8E5256201AB00FE5F12 /* Info.plist */,
 			);
 			path = CoursePlannerTests;
 			sourceTree = "<group>";
@@ -98,8 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				FE97D9D62514366300B4A74F /* CoursePlanner */,
-				FE27BAE22561F44E008F1A58 /* CoursePlannerTests */,
+				FE3FD8E2256201AB00FE5F12 /* CoursePlannerTests */,
 				FE97D9D52514366300B4A74F /* Products */,
+				FE27BAF02561F62A008F1A58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				FE97D9D42514366300B4A74F /* CoursePlanner.app */,
-				FE27BAE12561F44E008F1A58 /* CoursePlannerTests.xctest */,
+				FE3FD8E1256201AB00FE5F12 /* CoursePlannerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,22 +156,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE27BAE02561F44E008F1A58 /* CoursePlannerTests */ = {
+		FE3FD8E0256201AB00FE5F12 /* CoursePlannerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE27BAE82561F44E008F1A58 /* Build configuration list for PBXNativeTarget "CoursePlannerTests" */;
+			buildConfigurationList = FE3FD8E8256201AB00FE5F12 /* Build configuration list for PBXNativeTarget "CoursePlannerTests" */;
 			buildPhases = (
-				FE27BADD2561F44E008F1A58 /* Sources */,
-				FE27BADE2561F44E008F1A58 /* Frameworks */,
-				FE27BADF2561F44E008F1A58 /* Resources */,
+				FE3FD8DD256201AB00FE5F12 /* Sources */,
+				FE3FD8DE256201AB00FE5F12 /* Frameworks */,
+				FE3FD8DF256201AB00FE5F12 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FE27BAE72561F44E008F1A58 /* PBXTargetDependency */,
+				FE3FD8E7256201AB00FE5F12 /* PBXTargetDependency */,
 			);
 			name = CoursePlannerTests;
 			productName = CoursePlannerTests;
-			productReference = FE27BAE12561F44E008F1A58 /* CoursePlannerTests.xctest */;
+			productReference = FE3FD8E1256201AB00FE5F12 /* CoursePlannerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		FE97D9D32514366300B4A74F /* CoursePlanner */ = {
@@ -189,7 +201,7 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					FE27BAE02561F44E008F1A58 = {
+					FE3FD8E0256201AB00FE5F12 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = FE97D9D32514366300B4A74F;
 					};
@@ -212,13 +224,13 @@
 			projectRoot = "";
 			targets = (
 				FE97D9D32514366300B4A74F /* CoursePlanner */,
-				FE27BAE02561F44E008F1A58 /* CoursePlannerTests */,
+				FE3FD8E0256201AB00FE5F12 /* CoursePlannerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FE27BADF2561F44E008F1A58 /* Resources */ = {
+		FE3FD8DF256201AB00FE5F12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,19 +241,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE97D9DF2514366500B4A74F /* Preview Assets.xcassets in Resources */,
-				FE97D9DC2514366500B4A74F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FE27BADD2561F44E008F1A58 /* Sources */ = {
+		FE3FD8DD256201AB00FE5F12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE27BAE42561F44E008F1A58 /* CoursePlannerTests.swift in Sources */,
+				FE3FD8E4256201AB00FE5F12 /* CoursePlannerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,15 +276,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FE27BAE72561F44E008F1A58 /* PBXTargetDependency */ = {
+		FE3FD8E7256201AB00FE5F12 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FE97D9D32514366300B4A74F /* CoursePlanner */;
-			targetProxy = FE27BAE62561F44E008F1A58 /* PBXContainerItemProxy */;
+			targetProxy = FE3FD8E6256201AB00FE5F12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		FE27BAE92561F44E008F1A58 /* Debug */ = {
+		FE3FD8E9256201AB00FE5F12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -295,12 +305,13 @@
 			};
 			name = Debug;
 		};
-		FE27BAEA2561F44E008F1A58 /* Release */ = {
+		FE3FD8EA256201AB00FE5F12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FK6S4VW734;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CoursePlannerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,7 +454,9 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CoursePlanner/Preview Content\"";
 				DEVELOPMENT_TEAM = FK6S4VW734;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CoursePlanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,7 +479,9 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CoursePlanner/Preview Content\"";
 				DEVELOPMENT_TEAM = FK6S4VW734;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CoursePlanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,11 +498,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FE27BAE82561F44E008F1A58 /* Build configuration list for PBXNativeTarget "CoursePlannerTests" */ = {
+		FE3FD8E8256201AB00FE5F12 /* Build configuration list for PBXNativeTarget "CoursePlannerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE27BAE92561F44E008F1A58 /* Debug */,
-				FE27BAEA2561F44E008F1A58 /* Release */,
+				FE3FD8E9256201AB00FE5F12 /* Debug */,
+				FE3FD8EA256201AB00FE5F12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
