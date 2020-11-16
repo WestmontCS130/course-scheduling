@@ -9,18 +9,14 @@ import SwiftUI
 
 struct RequirementsView: View {
     
-    @State var requirements: [Requirement] = []
+    @State var requirements = [Requirement]()
     
     var body: some View {
         
-        
-        
-        //let requirements = ["CS 10", "CS 15", "CS 30"]
-            
         ZStack {
             Rectangle().foregroundColor(Color("LoginBackground")).ignoresSafeArea()
             List{
-                Section(header: Text("Requirements for CS")) {
+                Section(header: Text("Requirements")) {
                     ForEach(requirements) { requirement in
                         Text(requirement.RequirementName)
                     }
