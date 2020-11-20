@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65EB57A7256203CA0043BFCD /* NextYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB57A6256203CA0043BFCD /* NextYearView.swift */; };
 		FE08619025524D5C00C6D074 /* RequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE08618F25524D5C00C6D074 /* RequirementsView.swift */; };
 		FE1366BB254F6D0F00F4E661 /* Requirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1366BA254F6D0F00F4E661 /* Requirements.swift */; };
 		FE19E5992542804000B05378 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19E5982542804000B05378 /* CardView.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		65EB57A6256203CA0043BFCD /* NextYearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextYearView.swift; sourceTree = "<group>"; };
 		FE08618F25524D5C00C6D074 /* RequirementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementsView.swift; sourceTree = "<group>"; };
 		FE1366BA254F6D0F00F4E661 /* Requirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requirements.swift; sourceTree = "<group>"; };
 		FE19E5982542804000B05378 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				FE2839B425300DBC00D44EB1 /* RegistrationView.swift */,
 				FE4392C1252D19E600C93744 /* LoginView.swift */,
 				FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */,
+				65EB57A6256203CA0043BFCD /* NextYearView.swift */,
 				FE08618F25524D5C00C6D074 /* RequirementsView.swift */,
 				FE1366BA254F6D0F00F4E661 /* Requirements.swift */,
 				FE19E5982542804000B05378 /* CardView.swift */,
@@ -253,6 +256,7 @@
 				FE19E5992542804000B05378 /* CardView.swift in Sources */,
 				FEB4A55D25425E4000BFE2D9 /* MotherView.swift in Sources */,
 				FE97D9E725143BE500B4A74F /* MenuView.swift in Sources */,
+				65EB57A7256203CA0043BFCD /* NextYearView.swift in Sources */,
 				FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */,
 				FE08619025524D5C00C6D074 /* RequirementsView.swift in Sources */,
 				FE4392C2252D19E600C93744 /* LoginView.swift in Sources */,

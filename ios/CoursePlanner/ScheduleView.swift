@@ -57,6 +57,14 @@ struct ScheduleView: View {
                         }
                 } .navigationBarTitle("2020-2021")
             }
+            VStack {
+                Button(action : {
+                    print("button tapped")
+                }) {
+                    Image("002-right-arrow")
+                        //NavigationLink(destination: NextYearView)
+                    }
+                }
             }
         }
     }
