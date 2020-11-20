@@ -19,6 +19,9 @@
 		FE97D9E725143BE500B4A74F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9E625143BE500B4A74F /* MenuView.swift */; };
 		FEB4A55D25425E4000BFE2D9 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A55C25425E4000BFE2D9 /* MotherView.swift */; };
 		FEB4A56125426A2400BFE2D9 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */; };
+		FEF808E42568494600B41666 /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF808E32568494600B41666 /* ScheduleData.swift */; };
+		FEF808E725684A3700B41666 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF808E625684A3700B41666 /* UserData.swift */; };
+		FEF808EB25684C6700B41666 /* ScheduleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF808EA25684C6700B41666 /* ScheduleDetail.swift */; };
 		FEFD13DB2562FC1100737C7F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFD13DA2562FC1100737C7F /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,11 @@
 		FE97D9E625143BE500B4A74F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FEB4A55C25425E4000BFE2D9 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		FEF808E32568494600B41666 /* ScheduleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleData.swift; sourceTree = "<group>"; };
+		FEF808E625684A3700B41666 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		FEF808EA25684C6700B41666 /* ScheduleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetail.swift; sourceTree = "<group>"; };
+		FEF808F82568632700B41666 /* YearDataSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = YearDataSample.json; sourceTree = "<group>"; };
+		FEF808FE2568740000B41666 /* YearData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = YearData.json; sourceTree = "<group>"; };
 		FEFD13DA2562FC1100737C7F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -131,12 +139,16 @@
 				FE2839B425300DBC00D44EB1 /* RegistrationView.swift */,
 				FE4392C1252D19E600C93744 /* LoginView.swift */,
 				FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */,
+				FEF808E625684A3700B41666 /* UserData.swift */,
+				FEF808E32568494600B41666 /* ScheduleData.swift */,
+				FEF808EA25684C6700B41666 /* ScheduleDetail.swift */,
 				FE08618F25524D5C00C6D074 /* RequirementsView.swift */,
 				FE1366BA254F6D0F00F4E661 /* Requirements.swift */,
 				FE19E5982542804000B05378 /* CardView.swift */,
 				FE97D9D92514366300B4A74F /* MainMenuView.swift */,
 				FE97D9E625143BE500B4A74F /* MenuView.swift */,
 				FE97D9DB2514366500B4A74F /* Assets.xcassets */,
+				FEAFF59225687B29002CCE6D /* Resources */,
 				FE97D9E02514366500B4A74F /* Info.plist */,
 				FE97D9DD2514366500B4A74F /* Preview Content */,
 			);
@@ -149,6 +161,15 @@
 				FE97D9DE2514366500B4A74F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEAFF59225687B29002CCE6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEF808FE2568740000B41666 /* YearData.json */,
+				FEF808F82568632700B41666 /* YearDataSample.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,15 +278,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF808E725684A3700B41666 /* UserData.swift in Sources */,
 				FE97D9DA2514366300B4A74F /* MainMenuView.swift in Sources */,
 				FE19E5992542804000B05378 /* CardView.swift in Sources */,
 				FEB4A55D25425E4000BFE2D9 /* MotherView.swift in Sources */,
 				FE97D9E725143BE500B4A74F /* MenuView.swift in Sources */,
+				FEF808E42568494600B41666 /* ScheduleData.swift in Sources */,
 				FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */,
 				FE08619025524D5C00C6D074 /* RequirementsView.swift in Sources */,
 				FE4392C2252D19E600C93744 /* LoginView.swift in Sources */,
 				FEB4A56125426A2400BFE2D9 /* ScheduleView.swift in Sources */,
 				FE97D9D82514366300B4A74F /* CoursePlannerApp.swift in Sources */,
+				FEF808EB25684C6700B41666 /* ScheduleDetail.swift in Sources */,
 				FE8CE8CA2530EB9800E34E35 /* Account.swift in Sources */,
 				FE1366BB254F6D0F00F4E661 /* Requirements.swift in Sources */,
 			);

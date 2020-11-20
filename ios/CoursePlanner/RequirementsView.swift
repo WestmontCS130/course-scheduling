@@ -6,12 +6,29 @@
 //
 
 import SwiftUI
+import Network
+
 
 struct RequirementsView: View {
     
     @State var requirements = [Requirement]()
     
+    
+    func monitorNetwork(){
+        let monitor = NWPathMonitor()
+
+        monitor.pathUpdateHandler = { path in
+            if path.status == .satisfied {
+                print("We're connected!")
+            } else {
+                print("No connection.")
+            }
+
+            print(path.isExpensive)
+        }
+    }
     var body: some View {
+        
         
         ZStack {
             Rectangle().foregroundColor(Color("LoginBackground")).ignoresSafeArea()
