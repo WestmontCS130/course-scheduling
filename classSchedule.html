@@ -28,51 +28,32 @@
     tr:nth-child(odd) { 
         background-color: rgb(157, 34, 54);
         border: 1px solid #dddddd;
-
-
-    tr:nth-child(evem) { 
-        background-color: rgb(157, 34, 54);
-        border: 1px solid #dddddd;
-        
     }
-    
+
+    tr:nth-child(even) { 
+        background-color: rgb(157, 34, 54);
+        border: 1px solid #dddddd;        
+    }    
     
     </style>
 </head>
 
 <body>
+
 <h1 class="text-center">Class Schedule</h1>
 
 <a href="viewSchedule.html" type="button" class="btn btn-right westmontRed">Back</a>
 <a href="courseSite.html" type="button" class="btn btn-right westmontRed">LogOut</a>
 
- <table> 
-     <tr> 
-        <th>Course Schedule</th>
-     </tr>
-     <tr> 
-        <th>Class</th>
-        <th>Semester</th>
-        <th>Year</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>CS010 Design and Implementation of Solutions to Computational Problems</td>
-        <td>Fall</td>
-        <td>2021</td>
-    </tr>
-    <tr>
-        <td>CS015 Discrete Mathmatics</td>
-        <td>Fall</td>
-        <td>2021</td>
-    <tr>
-        <td>CS030 Abstract Models for Concrete Problems Using Java</td>
-        <td>Spring</td>
-        <td>2022</td>
-    </tr>
-        
-</td>
-</table>
-</html> 
+
+<div class="container-fluid">
+    <div id="classes-container" class="row"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/viewSchedule.js"></script>
+ 
 </body> 
+</html>
