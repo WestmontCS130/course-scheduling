@@ -1,5 +1,7 @@
 <!doctype html>
-<html lang="en">
+
+
+<html class="westmontAir" lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -13,54 +15,57 @@
     <title>View Schedule</title>
 
     <style>
-        table { 
+        table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
             width: 99%;
         }
         
-        tr { 
+        tr {
             background-color: rgb(238, 235, 233);
             border: 2px solid #dddddd;
             text-align: left;
         }
-        tr:nth-child(odd) { 
+        
+        tr:nth-child(odd) {
             background-color: rgb(157, 34, 54);
-            border: 2px solid  rgb(157, 34, 54);
+            border: 2px solid rgb(255, 255, 255);
             text-align: left;
-        
         }
-        tr:nth-child(evem) { 
-        background-color: rgb(157, 34, 54);
-        border: 2px solid #dddddd;
         
-    }
-
-        
-        </style>
+        tr:nth-child(evem) {
+            background-color: rgb(238, 235, 233);
+            border: 2px solid #dddddd;
+        }
+    </style>
 </head>
 
-<body>
+<body class="westmontAir">
     <h1 class="text-center">View Schedule</h1>
 
-    <a href="home.html" type="button" class="btn btn-right westmontRed">Back</a>
-    <a href="courseSite.html" type="button" class="btn btn-right westmontRed">LogOut</a>
+    <a href="home.html" type="button" class="btn btn-primary westmontRed">Back</a>
+    <a href="courseSite.html" type="button" class="btn btn-primary westmontRed">LogOut</a>
 
-     <table> 
-         <tr> 
+    <table>
+        <tr>
             <th>View Schedules</th>
-         </tr>
-         <tr> 
+        </tr>
+        <tr>
             <th>BS Computer Science Schedule</th>
             <th> </th>
-            <th> <a href="classSchedule.html" type="button" class="btn btn-right westmontRed">View</a></th>
+            <th><a href="classSchedule.html" type="button" id="viewCS" class="btn btn-primary westmontRed">View</button></a></th>
+
 
         </tr>
-                <td>BS Psychology Schedule</th>
-                <th> </th>
-                <th> <a href="classSchedule.html" type="button" class="btn btn-right westmontRed">View</a></th>
+    </table>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/site.js"></script>
 
-</table>
 </body>
+
 </html>
