@@ -43,29 +43,20 @@ struct ScheduleView: View {
         
         let springCourses = [fourth, fifth, sixth, seventh]
         
-        
         ZStack {
             Rectangle().foregroundColor(Color("LoginBackground")).ignoresSafeArea()
             List {
-                Section(header: Text("Fall 2020")) {
+                Section(header: Text("Fall")) {
                     ForEach(fallCourses) { item in
                         CourseRow(course: item)
                     }
                 }
-                Section(header: Text("Spring 2021")) {
+                Section(header: Text("Spring")) {
                         ForEach(springCourses) { item in
                             CourseRow(course: item)
                         }
-                }
+                } .navigationBarTitle("2020-2021")
             }
-
-                //CardView(name: "CS010 Design and Implementation of Solutions to Computational Problems", category: "CS", semester: "Fall", year: "2020")
-               // CardView(name: "CS015 Discrete Mathematics", category: "CS", semester: "Fall", year: "2020")
-              //  CardView(name: "CS030 Abstract Models for Concrete Problems Using Java ", category: "CS", semester: "Spring", year: "2021")
-              //  CardView(name: "Physical Education Activity", category: "PEA", semester: "Spring", year: "2021")
-              //  CardView(name: "Old Testament", category: "RS", semester: "Fall", year: "2020")
-               // CardView(name: "World History in Christian Perspective", category: "HIS", semester: "Spring", year: "2021")
-               // CardView(name: "Reading Imaginative Literature", category: "ENG", semester: "Spring", year: "2021")
             }
         }
     }
