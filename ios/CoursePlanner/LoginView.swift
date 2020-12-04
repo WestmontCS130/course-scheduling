@@ -11,7 +11,6 @@ struct LoginView: View {
     
     @ObservedObject var viewRouter: ViewRouter
     
-    
     @State var phone: String = ""
     @State var password: String = ""
     

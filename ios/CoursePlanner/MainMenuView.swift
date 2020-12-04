@@ -24,7 +24,7 @@ struct MainMenuView: View {
                 }
             }
         
-        return NavigationView {
+         NavigationView {
             GeometryReader { geometry in
                 ZStack(alignment: .leading) {
                     if self.showMenu {
@@ -50,8 +50,8 @@ struct MainMenuView: View {
                 }
             ))
         }
-        }
     }
+}
 
 
 
