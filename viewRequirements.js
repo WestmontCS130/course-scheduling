@@ -2,36 +2,20 @@
 
 $(document).ready(function() {
 
-    // alert('Hello Class Schedule');
-    //$('.phone_us').mask('000-000-0000');
-
-
-    // $("#viewCS").click(function() {
-        // alert('Working?');
 
         // This makes the ajax call and fires a success or error function defined inline.
         $.ajax({
             url: 'https://class-scheduling-api.herokuapp.com/requirements',
-
-             //Type of request is 'GET' - requesting then pulling data
-            type: 'GET',
-
-            //'True' gives code the approval to get data from the backend to the front end 
+            type: 'GET', 
             crossDomain: true,
-
-            //Establishes dataType 
-            dataType: 'json',
-
-            //Before AJAX request sent, set request too allow cookie values for own domain         
+            dataType: 'json',             
             beforeSend: function(xhr) {
                 xhr.withCredentials = true;                
             },
-
-            //if successful, log data from backend into the console
             success: function(data) {     
                 console.log(data);
-
-            // console.log("num elements: " + data.length); puts it in an array
+                
+                //table layout on html page   
                 var html_to_append = ''; 
                 html_to_append += '<table>'
                 html_to_append += '<tr>'
@@ -39,33 +23,35 @@ $(document).ready(function() {
                 html_to_append += '<th>Name</th>'
                 html_to_append += '</tr>'
 
-                //append data into html as table with requirements, majorID
+
+                //append data into html into a table with requirements, majorID
                 $.each(data, function(i, requirementItem) {
 
-                //visit each element in array, pull out 'yearItem'
-                console.log(requirementItem.idRequirements); 
-                console.log(requirementItem.RequirementName);
-
-                //log requirementsItem - 'id requirements' (pull from database)
-                //log requirementsItem - 'MajorID' (pull from database)
-                //if requirementname doesnt equal null, send it to the table! 
+                    //visit each element in the database, pull out 'requirementItem'
+                    console.log(requirementItem.idRequirements); 
+                    console.log(requirementItem.RequirementName);
+                
+                    //conditional statement that allows function to traverse thorugh the database and append requirement information
+                
                     if (requirementItem.RequirementName != null) {
                     html_to_append += '<tr>'
                     html_to_append += '<td>' + requirementItem.idRequirements + '</td>'
                     html_to_append += '<td>' + requirementItem.RequirementName + '</td>'
                     html_to_append += '</tr>'
                     }
-    
+                    
                   });
         
-                  //append data into html_to_append table 
+
                   html_to_append += '</table>'
 
                   $("#classes-container").html(html_to_append);
 
             },
+
+            //Function call if an error occurs 
             error: function(request, error) {
-                // This function is call if an error occurs.
+
                 alert("Request: " + JSON.stringify(request));
             }
         });
