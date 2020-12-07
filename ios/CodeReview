@@ -1,0 +1,131 @@
+//ScheduleView.swift:
+
+import SwiftUI
+import Foundation
+
+struct CourseRow: View {
+    let course: Course
+    
+    var body: some View {
+        Text(course.name)
+    }
+}
+
+
+struct ScheduleView: View {
+   
+    @EnvironmentObject private var userData: UserData
+    
+    //var index: Int
+    
+    var body: some View {
+        
+        
+        NavigationView{
+        ZStack {
+            Rectangle().foregroundColor(Color("LoginBackground")).ignoresSafeArea()
+            List {
+                Section(header: Text("Years")) {
+                    ForEach(userData.schedule) { year in
+                        NavigationLink (
+                            destination: ScheduleDetail(year: year).environmentObject(self.userData)
+                        ) {
+                            Text(year.name)
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
+
+struct ScheduleView_Previews: PreviewProvider {
+    static var previews: some View {
+        let userData = UserData()
+        ScheduleView().environmentObject(userData)
+    }
+}
+
+
+//ScheduleDetail.swift:
+
+
+import SwiftUI
+
+struct ScheduleDetail: View {
+    @EnvironmentObject var userData: UserData
+    
+    var year: Year
+    
+    var body: some View {
+        List {
+            ForEach(year.semesters) { semester in
+                Section(header: Text(semester.name)) {
+                    ForEach(semester.courses) { course in
+                        Text(course.name)
+                    }
+                }
+            }
+        }
+    }
+}
+
+struct ScheduleDetail_Previews: PreviewProvider {
+    static var previews: some View {
+        let userData = UserData()
+        return ScheduleDetail(year: userData.schedule[0]).environmentObject(userData)
+    }
+}
+
+
+//ScheduleData.swift:
+
+
+import Foundation
+
+struct Course: Hashable, Codable, Identifiable{
+    var name: String
+    var id: Int
+    var subject: String
+}
+
+struct Semester: Hashable, Codable, Identifiable {
+    var name: String
+    var id: Int
+    var courses: [Course]
+}
+
+
+struct Year: Hashable, Codable, Identifiable {
+    var name: String
+    // Year 1, year 2, etc.
+    //var year: Int
+    var id: Int
+    var semesters: [Semester]
+}
+
+
+let ScheduleData: [Year] = load("YearDataSample.json")
+
+func load<T: Decodable>(_ filename: String) -> T {
+    let data: Data
+    
+    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
+    }
+    
+    do {
+        data = try Data(contentsOf: file)
+    } catch {
+        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
+    }
+    
+    do {
+        let decoder = JSONDecoder()
+        return try decoder.decode(T.self, from: data)
+    } catch {
+        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+    }
+}

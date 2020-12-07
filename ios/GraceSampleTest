@@ -1,0 +1,9 @@
+ func testPasswordNumber() {
+        let password = "Chick3nPotPi3"
+        XCTAssertEqual(password.contains("3"), true)
+    }
+    
+    func testPasswordCharacter() {
+        let password = "ChickenPotP!e"
+        XCTAssertEqual(password.contains("!"), true)
+    }

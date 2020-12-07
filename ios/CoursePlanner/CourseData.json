@@ -1,0 +1,42 @@
+[
+	{
+		"name" : "CS010 Design and Implementation of Solutions",
+		"category" : "CS",
+		"id" : 1
+		},
+		{
+		"name": "CS015 Discrete Mathematics",
+		"category" : "CS",
+		"id" : 2
+		},
+		{
+		"name": "Old Testament",
+		"category" : "RS",
+		"id" : 3
+		},
+		{
+		"name": "CS030 Abstract Models for Concrete Problems",
+		"category" : "CS",
+		"id" : 4
+		},
+		{
+		"name": "World History in Christian Perspective",
+		"category" : "HIS",
+		"id" : 5
+		},
+		{
+		"name": "Reading Imaginative Literature",
+		"category" : "ENG",
+		"id" : 6
+		},
+		{
+		"name": "Exploring the Physical Sciences",
+		"category" : "PHY",
+		"id" : 7
+		},
+		{
+		"name": "Physical Education Activity",
+		"category" : "PEA",
+		"id" : 8
+		},
+}]
