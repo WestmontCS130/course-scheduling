@@ -12,7 +12,7 @@ struct Requirement: Codable {
     
     var idRequirements: Int
     var RequirementName: String
-    var MajorID: String
+    var MajorID: Int
     var FrequencyOffered: Int
     var SpecificClass: Int
 
