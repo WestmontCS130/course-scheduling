@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1607123115268" clover="3.2.0">
+  <project timestamp="1607123115269" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="8" coveredelements="8" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+    <file name="register.js" path="C:\Users\Ethan Bell\Documents\course-scheduling\js\register.js">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="2" count="15" type="stmt"/>
+      <line num="3" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="7" count="8" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

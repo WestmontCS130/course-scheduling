@@ -1,5 +1,5 @@
-body,
-html {
+body.westmontAir,
+html.westmontAir {
     background-image: url('../images/mainPageBG.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,4 +27,10 @@ html {
 .westmontRed {
     background-color: rgb(157, 34, 54);
     font-weight: bold;
+}
+
+.upper-left-corner {
+    position: absolute;
+    top: 70px;
+    right: 15px;    
 }
