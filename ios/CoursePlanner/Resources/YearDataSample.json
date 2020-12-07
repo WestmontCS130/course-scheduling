@@ -1,0 +1,70 @@
+[
+    {
+        "name": "2020-2021",
+        "id": 1001,
+        "semesters": [
+            {
+                "name": "Fall",
+                "id": 1,
+                "courses": [
+                    {
+                        "name": "CS-045 Computer Organization and Hardware Arch",
+                        "id": 1,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"CS Elective",
+                        "id": 2,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"Exploring the Physical Sciences",
+                        "id": 3,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Thinking Historically",
+                        "id": 4,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Physical Education",
+                        "id": 5,
+                        "subject": "General Education"
+                    }
+
+                ]
+                
+
+            },
+            {
+                "name": "Spring",
+                "id": 2,
+                "courses": [
+                    {
+                        "name":"CS Elective",
+                        "id": 6,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"Introduction to Christian Doctrine",
+                        "id": 7,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Philisophical Reflections",
+                        "id": 8,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Physical Education",
+                        "id": 9,
+                        "subject": "General Education"
+                    }
+                ]
+            }
+        ]
+
+
+    }
+]

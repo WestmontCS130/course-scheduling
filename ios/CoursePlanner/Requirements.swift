@@ -5,40 +5,47 @@
 //  Created by Levi Nelson on 11/1/20.
 //
 
-import Foundation
+import SwiftUI
 
-class Requirements: ObservableObject, Codable {
+//Singular Requirement
+struct Requirement: Codable {
     
-    
-    @Published var idReqirements = 0
-    @Published var RequirementName = ""
-    @Published var MajorID = 0
-    @Published var FrequencyOffered = 0
-    @Published var SpecificClass = 0
-    
-    enum CodingKeys: CodingKey {
-        case idRequirements, RequirementName, MajorID,FrequencyOffered,SpecificClass
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
+    var idRequirements: Int
+    var RequirementName: String
+    var MajorID: String
+    var FrequencyOffered: Int
+    var SpecificClass: Int
+
+}
+
+// Now conform to Identifiable
+extension Requirement: Identifiable {
+    var id: Int { return idRequirements }
+}
+
+struct Requirements: Codable {
+    var requirements: [Requirement]
+}
+
+class Api {
+    func getRequirements(completion: @escaping ([Requirement]) -> ()) {
         
-        try container.encode(idReqirements, forKey: .idRequirements)
-        try container.encode(RequirementName, forKey: .RequirementName)
-        try container.encode(MajorID, forKey: .MajorID)
-        try container.encode(FrequencyOffered, forKey: .FrequencyOffered)
-        try container.encode(SpecificClass, forKey: .SpecificClass)
-    }
-    
-    init() {}
-    
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+        guard let url = URL(string: "https://class-scheduling-api.herokuapp.com/requirements") else {return}
         
-        idReqirements = try container.decode(Int.self, forKey: .idRequirements)
-        RequirementName = try container.decode(String.self, forKey: .RequirementName)
-        MajorID = try container.decode(Int.self, forKey: .MajorID)
-        FrequencyOffered = try container.decode(Int.self, forKey: .FrequencyOffered)
-        SpecificClass = try container.decode(Int.self, forKey: .SpecificClass)
+        URLSession.shared.dataTask(with: url) { (data, response, error) in // Need to add error handling in second and third argument
+            if let data = data {
+                if let requirements = try? JSONDecoder().decode([Requirement].self, from: data) {
+                    print(requirements)
+                    DispatchQueue.main.async {
+                        completion(requirements)
+                    }
+                    
+                    return
+                }
+            }
+            // if we're still here it means there was a problem
+            print("Fetch failed: \(error?.localizedDescription ?? "Unknown error")")
+        }
+        .resume()
     }
 }

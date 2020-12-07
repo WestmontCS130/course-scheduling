@@ -28,9 +28,9 @@ struct MotherView: View {
         VStack{
             if viewRouter.currentPage == "Login" {
                 LoginView(viewRouter: viewRouter)
-            } else if viewRouter.currentPage == "Register" {
+            } else if viewRouter.currentPage == "Register"{
                 RegistrationView(viewRouter: viewRouter)
-            } else if viewRouter.currentPage == "MainMenu" {
+            } else if viewRouter.currentPage == "MainMenu"{
                 MainMenuView(viewRouter: viewRouter)
             } else if viewRouter.currentPage == "CS-Schedule" {
                 ScheduleView()
