@@ -1,5 +1,7 @@
 <!doctype html>
-<html lang="en">
+
+
+<html class="westmontAir" lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -13,31 +15,29 @@
     <title>View Schedule</title>
 
     <style>
-        table { 
+        table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
             width: 99%;
         }
         
-        tr { 
+        tr {
             background-color: rgb(238, 235, 233);
             border: 2px solid #dddddd;
             text-align: left;
         }
-        tr:nth-child(odd) { 
+        
+        tr:nth-child(odd) {
             background-color: rgb(157, 34, 54);
-            border: 2px solid  rgb(157, 34, 54);
+            border: 2px solid rgb(255, 255, 255);
             text-align: left;
-        
         }
-        tr:nth-child(evem) { 
-        background-color: rgb(157, 34, 54);
-        border: 2px solid #dddddd;
         
-    }
-
-        
-        </style>
+        tr:nth-child(evem) {
+            background-color: rgb(238, 235, 233);
+            border: 2px solid #dddddd;
+        }
+    </style>
 </head>
 
 <body class="westmontAir">
@@ -53,10 +53,11 @@
         <tr>
             <th>BS Computer Science Schedule</th>
             <th> </th>
+
             <th> <a href="courseRequirements.html" type="button"class="btn btn-primary westmontRed">View Requirements</button></th>
             <th> <a href="classSchedule.html" type="button"class="btn btn-primary westmontRed">View 4 Year Plan</button></th>
-        </tr>
-        
+        </tr>        
+
     </table>
 
     <!-- Optional JavaScript -->
@@ -67,5 +68,7 @@
     <script src="js/site.js"></script>
     <script src="js/viewSchedule.js"></script>
 
+
 </body>
+
 </html>

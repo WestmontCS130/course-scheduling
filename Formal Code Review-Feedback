@@ -1,0 +1,38 @@
+Scribed by: Sam Amundson
+Read by: Ethan Bell
+Facilitated by: Blake Dayman
+Author: Claire Inglehart
+
+Summary/informational
+-JS file
+-Connect to API
+-Pull information for requirements
+Ajax
+-JS library 
+Code
+-Commented out before ajax
+-Troubleshooting(console.log), no longer in use, can be removed for final product
+-Url link
+'GET' request
+-CrossDomain
+-Remove some excess comments
+-Maybe make one comment encompassing more code
+'beforeSend'
+-Allow cookie values on the domain
+'Success'
+-Log data from backend
+-Adding comments where creating table
+-Logging data to console… why?
+-We may not want it in production
+-It’s for certain places, not necessarily user/client side
+-Appending data to table
+More console logs
+-More commented out code
+-See above
+-Check to make sure values aren’t Null
+-Making the container
+-Error function
+-Looks good!
+Feedback in general
+-Removing excess comments and simplifying them
+-Remove commented code
