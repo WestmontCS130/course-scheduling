@@ -29,7 +29,7 @@ struct Year: Hashable, Codable, Identifiable {
 }
 
 
-let ScheduleData: [Year] = load("YearDataSample.json")
+let ScheduleData: [Year] = load("YearData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

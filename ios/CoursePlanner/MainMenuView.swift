@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainMenuView.swift
 //  CoursePlanner
 //
 //  Created by Levi Nelson on 9/17/20.
@@ -30,7 +30,6 @@ struct MainMenuView: View {
                     if self.showMenu {
                         MenuView()
                             .frame(width: 440)
-                            //.frame(width: geometry.size.width/2)
                             .transition(.move(edge: .leading))
                     }
                 }.padding(.top, 150)
@@ -43,12 +42,10 @@ struct MainMenuView: View {
                     withAnimation {
                         self.showMenu.toggle()
                     }
-                }) {
-                    Image("hamburger")
+                }) {Image("hamburger")
                         .resizable()
                         .frame(width: 40, height: 40, alignment: .center)
-                }
-            ))
+                }))
         }
     }
 }
