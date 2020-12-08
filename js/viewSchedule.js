@@ -24,6 +24,7 @@ $(document).ready(function() {
 
             //.each visits each element in the data under yearItem and sorts it by idyears and rName1
             $.each(data, function(i, yearItem) {
+                s
 
                 console.log(yearItem.idyears);
                 console.log(yearItem.rName1);
