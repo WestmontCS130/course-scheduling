@@ -14,6 +14,8 @@
 		FE1366BB254F6D0F00F4E661 /* Requirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1366BA254F6D0F00F4E661 /* Requirements.swift */; };
 		FE19E5992542804000B05378 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19E5982542804000B05378 /* CardView.swift */; };
 		FE2839B525300DBC00D44EB1 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2839B425300DBC00D44EB1 /* RegistrationView.swift */; };
+		FE388F96257F2C5000968590 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE388F95257F2C5000968590 /* LabelView.swift */; };
+		FE388F98257F2D3300968590 /* YearData.json in Resources */ = {isa = PBXBuildFile; fileRef = FEF808FE2568740000B41666 /* YearData.json */; };
 		FE3FD8E4256201AB00FE5F12 /* CoursePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3FD8E3256201AB00FE5F12 /* CoursePlannerTests.swift */; };
 		FE4392C2252D19E600C93744 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4392C1252D19E600C93744 /* LoginView.swift */; };
 		FE8CE8CA2530EB9800E34E35 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8CE8C92530EB9800E34E35 /* Account.swift */; };
@@ -22,6 +24,7 @@
 		FE97D9E725143BE500B4A74F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97D9E625143BE500B4A74F /* MenuView.swift */; };
 		FEB4A55D25425E4000BFE2D9 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A55C25425E4000BFE2D9 /* MotherView.swift */; };
 		FEB4A56125426A2400BFE2D9 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4A56025426A2400BFE2D9 /* ScheduleView.swift */; };
+		FEB96E50257F1D8B00E98A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE97D9DB2514366500B4A74F /* Assets.xcassets */; };
 		FEF808E42568494600B41666 /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF808E32568494600B41666 /* ScheduleData.swift */; };
 		FEF808E725684A3700B41666 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF808E625684A3700B41666 /* UserData.swift */; };
 		FEF808EB25684C6700B41666 /* ScheduleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF808EA25684C6700B41666 /* ScheduleDetail.swift */; };
@@ -56,6 +59,7 @@
 		FE1366BA254F6D0F00F4E661 /* Requirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requirements.swift; sourceTree = "<group>"; };
 		FE19E5982542804000B05378 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FE2839B425300DBC00D44EB1 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		FE388F95257F2C5000968590 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		FE3FD8E1256201AB00FE5F12 /* CoursePlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoursePlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3FD8E3256201AB00FE5F12 /* CoursePlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePlannerTests.swift; sourceTree = "<group>"; };
 		FE3FD8E5256201AB00FE5F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				FE19E5982542804000B05378 /* CardView.swift */,
 				FE97D9D92514366300B4A74F /* MainMenuView.swift */,
 				FE97D9E625143BE500B4A74F /* MenuView.swift */,
+				FE388F95257F2C5000968590 /* LabelView.swift */,
 				FE97D9DB2514366500B4A74F /* Assets.xcassets */,
 				FEAFF59225687B29002CCE6D /* Resources */,
 				FE97D9E02514366500B4A74F /* Info.plist */,
@@ -298,6 +303,7 @@
 				FEF808EB25684C6700B41666 /* ScheduleDetail.swift in Sources */,
 				FE8CE8CA2530EB9800E34E35 /* Account.swift in Sources */,
 				FE1366BB254F6D0F00F4E661 /* Requirements.swift in Sources */,
+				FE388F96257F2C5000968590 /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

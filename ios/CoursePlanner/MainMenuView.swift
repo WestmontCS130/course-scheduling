@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainMenuView.swift
 //  CoursePlanner
 //
 //  Created by Levi Nelson on 9/17/20.

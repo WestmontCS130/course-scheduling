@@ -10,45 +10,19 @@ import SwiftUI
 struct MenuView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Image(systemName: "person").foregroundColor(Color("LoginButton")).imageScale(.large)
-                Text("Profile").font(.headline).foregroundColor(Color.blue)
-            }
-            .padding(.top, 30)
+            
+            LabelView(imageName: "person.fill", text: "Profile")
            
-            HStack {
-                Image(systemName: "chevron.up.square").foregroundColor(Color("LoginButton")).imageScale(.large)
-                Text("Upload Complete Classes").font(.headline).foregroundColor(Color.blue)
-            }
-            .padding(.top, 30)
+            LabelView(imageName: "chevron.up.square", text: "Upload Complete Classes")
             
-            HStack {
-                Image(systemName: "calendar").foregroundColor(Color("LoginButton")).imageScale(.large)
-                Text("View Previous Classes").font(.headline).foregroundColor(Color.blue)
-            }
-            .padding(.top, 30)
+            LabelView(imageName: "calendar", text: "View Previous Classes")
             
-            HStack {
-                Image(systemName: "gear").foregroundColor(Color("LoginButton")).imageScale(.large)
-                Text("Settings").font(.headline).foregroundColor(Color.blue)
-            }
-            .padding(.top, 30)
+            LabelView(imageName: "gear", text: "Settings")
             
-            HStack {
-                Image(systemName: "calendar.circle").foregroundColor(Color("LoginButton")).imageScale(.large)
-                NavigationLink(
-                    destination: ScheduleView().environmentObject(UserData())) {Text("View Yearly Schedule").font(.headline).foregroundColor(Color.blue)
-                }
-            }
-            .padding(.top, 30)
             
-            HStack {
-                Image(systemName: "calendar.circle").foregroundColor(Color("LoginButton")).imageScale(.large)
-                NavigationLink(
-                    destination: RequirementsView()) {Text("View Requirements").font(.headline).foregroundColor(Color.blue)
-                }
-            }
-            .padding(.top, 30)
+            ButtonNavView(imageName: "calendar.circle", destination: AnyView(ScheduleView().environmentObject(UserData())), text: "View Yearly Schedule")
+            
+            ButtonNavView(imageName: "calendar.circle", destination: AnyView(RequirementsView()), text: "View Requirements")
 
             Spacer()
         }
@@ -63,3 +37,5 @@ struct MenuView_Previews: PreviewProvider {
         MenuView()
     }
 }
+
+
