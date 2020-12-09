@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65179070257F1DEF00642B3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE97D9DB2514366500B4A74F /* Assets.xcassets */; };
+		653A018B258076A60047AF5D /* YearData.json in Resources */ = {isa = PBXBuildFile; fileRef = FEF808FE2568740000B41666 /* YearData.json */; platformFilter = ios; };
+		653A018E258077330047AF5D /* YearData.json in Resources */ = {isa = PBXBuildFile; fileRef = FEF808FE2568740000B41666 /* YearData.json */; };
 		FE08619025524D5C00C6D074 /* RequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE08618F25524D5C00C6D074 /* RequirementsView.swift */; };
 		FE1366BB254F6D0F00F4E661 /* Requirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1366BA254F6D0F00F4E661 /* Requirements.swift */; };
 		FE19E5992542804000B05378 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19E5982542804000B05378 /* CardView.swift */; };
@@ -253,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653A018B258076A60047AF5D /* YearData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +264,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653A018E258077330047AF5D /* YearData.json in Resources */,
+				65179070257F1DEF00642B3D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FK6S4VW734;
 				INFOPLIST_FILE = CoursePlannerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,7 +343,7 @@
 				DEVELOPMENT_TEAM = FK6S4VW734;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CoursePlannerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -459,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -482,7 +488,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CoursePlanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,7 +513,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CoursePlanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
