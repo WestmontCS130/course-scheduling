@@ -9,11 +9,14 @@ Database: MySQL and Node.js Express REST API
 Also using gitHub, Sourcetree, and Heroku  
 
 ![Software Architecture](SoftwareArch.png)
+
 ## Metrics
+### Velocity
+12 user stories per sprint
+### Number of Defects by Severity per iOS Sprint
+Number of new and existing defects by severity per iOS sprint where towards the beginning we had no bugs but towards the end bugs became evident because of the attempts to implement functionality into the app. In general we did okay handling defects that never impede our progress in our sprints. Whether these defects have been solved or not our team has been able to navigate around the defects strategically to continue on making progress towards our goals in Course Scheduling.  
 
 ## Retrospective
-
-## Contact
 
 ## Welcome to GitHub Pages
 
