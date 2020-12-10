@@ -1,0 +1,172 @@
+//
+//  ContentView.swift
+//  CoursePlanner
+//
+//  Created by Levi Nelson on 9/17/20.
+//
+import SwiftUI
+
+struct MainMenuView: View {
+    
+    @ObservedObject var viewRouter = ViewRouter()
+    
+    @State var showMenu = false
+    
+    var body: some View {
+
+        let drag = DragGesture()
+            .onEnded {
+                if $0.translation.width < -100 {
+                    withAnimation {
+                        self.showMenu = false
+                    }
+                }
+            }
+        
+         NavigationView {
+            GeometryReader { geometry in
+                ZStack(alignment: .leading) {
+                    if self.showMenu {
+                        MenuView()
+                            .frame(width: 440)
+                            //.frame(width: geometry.size.width/2)
+                            .transition(.move(edge: .leading))
+                    }
+                }.padding(.top, 150)
+                
+                .gesture(drag)
+                .background(Image("mainPageBG")).frame(width: 200, height: 200)
+            }
+            .navigationBarItems(leading: (
+                Button(action: {
+                    withAnimation {
+                        self.showMenu.toggle()
+                    }
+                }) {
+                    Image("hamburger")
+                        .resizable()
+                        .frame(width: 40, height: 40, alignment: .center)
+                }
+            ))
+        }
+    }
+}
+
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainMenuView()
+    }
+}
+
+//
+//  MenuView.swift
+//  CoursePlanner
+//
+//  Created by Levi Nelson on 9/17/20.
+//
+import SwiftUI
+
+struct MenuView: View {
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                Image(systemName: "person").foregroundColor(Color("LoginButton")).imageScale(.large)
+                Text("Profile").font(.headline).foregroundColor(Color.blue)
+            }
+            .padding(.top, 30)
+           
+            HStack {
+                Image(systemName: "chevron.up.square").foregroundColor(Color("LoginButton")).imageScale(.large)
+                Text("Upload Complete Classes").font(.headline).foregroundColor(Color.blue)
+            }
+            .padding(.top, 30)
+            
+            HStack {
+                Image(systemName: "calendar").foregroundColor(Color("LoginButton")).imageScale(.large)
+                Text("View Previous Classes").font(.headline).foregroundColor(Color.blue)
+            }
+            .padding(.top, 30)
+            
+            HStack {
+                Image(systemName: "gear").foregroundColor(Color("LoginButton")).imageScale(.large)
+                Text("Settings").font(.headline).foregroundColor(Color.blue)
+            }
+            .padding(.top, 30)
+            
+            HStack {
+                Image(systemName: "calendar.circle").foregroundColor(Color("LoginButton")).imageScale(.large)
+                NavigationLink(
+                    destination: ScheduleView().environmentObject(UserData())) {Text("View Yearly Schedule").font(.headline).foregroundColor(Color.blue)
+                }
+            }
+            .padding(.top, 30)
+            
+            HStack {
+                Image(systemName: "calendar.circle").foregroundColor(Color("LoginButton")).imageScale(.large)
+                NavigationLink(
+                    destination: RequirementsView()) {Text("View Requirements").font(.headline).foregroundColor(Color.blue)
+                }
+            }
+            .padding(.top, 30)
+
+            Spacer()
+        }
+        .padding(.leading, 130)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color.white)
+    }
+}
+
+struct MenuView_Previews: PreviewProvider {
+    static var previews: some View {
+        MenuView()
+    }
+}
+
+//
+//  MotherView.swift
+//  CoursePlanner
+//
+//  Created by Levi Nelson on 10/22/20.
+//
+import SwiftUI
+import Foundation
+import Combine
+
+class ViewRouter: ObservableObject {
+    
+    let objectWillChange = PassthroughSubject<ViewRouter,Never>()
+    
+    var currentPage: String = "Login"{
+        didSet {
+            objectWillChange.send(self)
+        }
+    }
+}
+
+struct MotherView: View {
+    
+    @ObservedObject var viewRouter: ViewRouter
+    
+    var body: some View {
+        VStack{
+            if viewRouter.currentPage == "Login" {
+                LoginView(viewRouter: viewRouter)
+            } else if viewRouter.currentPage == "Register"{
+                RegistrationView(viewRouter: viewRouter)
+            } else if viewRouter.currentPage == "MainMenu"{
+                MainMenuView(viewRouter: viewRouter)
+            } else if viewRouter.currentPage == "CS-Schedule" {
+                ScheduleView()
+            }
+        }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+    }
+}
+
+struct MotherView_Previews: PreviewProvider {
+    static var previews: some View {
+        MotherView(viewRouter: ViewRouter())
+    }
+}

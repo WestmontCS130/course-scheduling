@@ -1,0 +1,239 @@
+[
+    {
+        "name": "2020-2021",
+        "id": 1001,
+        "semesters": [
+            {
+                "name": "Fall",
+                "id": 1,
+                "courses": [
+                    {
+                        "name": "CS-045 Computer Organization and Hardware Arch",
+                        "id": 1,
+                        "subject": "Computer Science" 
+                    },
+                    {
+                        "name":"CS Elective",
+                        "id": 2,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"Exploring the Physical Sciences",
+                        "id": 3,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Thinking Historically",
+                        "id": 4,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Physical Education",
+                        "id": 5,
+                        "subject": "General Education"
+                    }
+
+                ]
+                
+
+            },
+            {
+                "name": "Spring",
+                "id": 2,
+                "courses": [
+                    {
+                        "name":"CS Elective",
+                        "id": 6,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"Introduction to Christian Doctrine",
+                        "id": 7,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Philisophical Reflections",
+                        "id": 8,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Physical Education",
+                        "id": 9,
+                        "subject": "General Education"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "2021-2022",
+        "id": 1002,
+        "semesters":[
+            {
+                "name": "Fall",
+                "id": 3,
+                "courses": [
+                    {
+                        "name":"CS-010 Design and Implementation of Solutions to Computational Problems",
+                        "id": 14,
+                        "subject": "Computer Science"
+
+                    },
+                    {
+                        "name":"CS-015 Discrete Mathematics",
+                        "id": 15,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"Old Testament",
+                        "id": 16,
+                        "subject": "General Education"
+                    }
+                ]
+            },
+            {
+                "name": "Spring",
+                "id": 4,
+                "courses": [
+                    {
+                        "name":"CS-030 Abstract Models for Concrete Problems Using Java",
+                        "id": 17,
+                        "subject": "Computer Science"
+
+                    },
+                    {
+                        "name":"Physical Education Activity",
+                        "id": 18,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"World History in Christian Perspective",
+                        "id": 19,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Reading Imaginative Literature",
+                        "id": 20,
+                        "subject": "General Education"
+                    }
+                ]
+            }
+        ]
+
+    },
+    {
+        "name": "2022-2023",
+        "id": 1003,
+        "semesters":[
+            {
+                "name": "Fall",
+                "id": 5,
+                "courses": [
+                    {
+                        "name":"CS-130 Software Development",
+                        "id": 21,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"Reasoning Abstractly",
+                        "id": 22,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"New Testament",
+                        "id": 23,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Modern/Foreign Language",
+                        "id": 24,
+                        "subject": "General Education"
+                    }
+                ]
+            },
+            {
+                "name": "Spring",
+                "id": 6,
+                "courses": [
+                    {
+                        "name":"CS-120 Space Time and Perfect Algorithms",
+                        "id": 25,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"CS Elective",
+                        "id": 26,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"Thinking Globally",
+                        "id": 27,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"Working Artistically",
+                        "id": 28,
+                        "subject": "General Education"
+                    }
+                ]
+            }
+        ]
+
+
+    },
+    {
+        "name": "2023-2024",
+        "id": 1004,
+        "semesters":[
+            {
+                "name": "Fall",
+                "id": 7,
+                "courses": [
+                    {
+                        "name":"CS Elective",
+                        "id": 31,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"CS-105 Programming Languages",
+                        "id": 29,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"CS Elective",
+                        "id": 30,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"Fitness for Life",
+                        "id": 32,
+                        "subject": "Computer Science"
+                    }
+                ]
+            },
+            {
+                "name": "Spring",
+                "id": 8,
+                "courses": [
+                    {
+                        "name":"Senior Seminar",
+                        "id": 33,
+                        "subject": "General Education"
+                    },
+                    {
+                        "name":"CS Elective",
+                        "id": 34,
+                        "subject": "Computer Science"
+                    },
+                    {
+                        "name":"Understanding Society",
+                        "id": 35,
+                        "subject": "General Education"
+                    }
+
+                ]
+            }
+        ]
+
+    }
+]

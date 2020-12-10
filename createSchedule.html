@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="westmontAir" lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.css">
+
+    <title>Create Schedule</title>
+</head>
+
+<body class="westmontAir">
+    <h1 class="text-center">Create New Schedule</h1>
+    <hr>
+
+    </div>
+    </body>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>
+      var yearObject = {
+       // document.getElementById("rName1")
+        "2021": {
+          "Spring": [document.getElementById("rName1")]
+
+          // "Spring": ["Links", "Images", "Tables", "Lists"],
+          // "Fall": ["Borders", "Margins", "Backgrounds", "Float"],
+        },
+        "2022": {
+          // "Spring": ["Variables", "Strings", "Arrays"],
+          // "Fall": ["SELECT", "UPDATE", "DELETE"]
+        }
+      }
+      window.onload = function() {
+        var yearSel = document.getElementById("year");
+        var semSel = document.getElementById("semester");
+        var classSel = document.getElementById("class");
+        for (var x in yearObject) {
+          yearSel.options[yearSel.options.length] = new Option(x, x);
+        }
+        yearSel.onchange = function() {
+          //empty Chapters- and Topics- dropdowns
+          classSel.length = 1;
+          semSel.length = 1;
+          //display correct values
+          for (var y in yearObject[this.value]) {
+            semSel.options[semSel.options.length] = new Option(y, y);
+          }
+        }
+        semSel.onchange = function() {
+          //empty Chapters dropdown
+          classSel.length = 1;
+          //display correct values
+          var z = yearObject[yearSel.value][this.value];
+          for (var i = 0; i < z.length; i++) {
+            classSel.options[classSel.options.length] = new Option(z[i], z[i]);
+          }
+        }
+      }
+      </script>
+      <body>
+      
+      <h1>Add Class</h1>
+      
+      <form name="form1" id="form1" action="/action_page.php">
+        <h2 class="btn btn-right westmontRed">Year: <select name="year" id="year">
+          <option value="" selected="selected">Select Year</option> </h2>
+        </select>
+        <br><br>
+      Semester: <select name="semester" id="semester">
+          <option value="" selected="selected">Select Semster</option>
+        </select>
+        <br><br>
+      Class: <select name="class" id="class">
+          <option value="" selected="selected">Select Class</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Add Class">  
+      </form>
+    
+    </head>   
+
+  </body>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/site.js"></script>
+    <script src="js/viewSchedule.js"></script>
+
+</html>
