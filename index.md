@@ -1,3 +1,15 @@
+## Introduction
+
+## Installation
+
+## Software Architecture
+
+## Metrics
+
+## Retrospective
+
+## Contact
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/WestmontCS130/course-scheduling/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
