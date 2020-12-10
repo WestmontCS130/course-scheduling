@@ -5,9 +5,9 @@ In order to install this project navigate to our repository found in the Contact
 ## Software Architecture
 ### iOS App  
 Swift using XCode  
-### Website: 
+### Website 
 JavaScript, HTML CSS, and Bootstrap using VSCode  
-### Database: 
+### Database 
 MySQL and Node.js Express REST API  
 ### Misc.
 gitHub, Sourcetree, and Heroku  
