@@ -3,7 +3,7 @@ Students struggle to create schedules. Course Planner is the solution. Through a
 ## Installation
 In order to install this project navigate to our repository found in the Contact section below. Next, clone the repo on your local computer. To access the web side of our software locate courseSite.html and open it with your web browser. To access the app use xcode and navigate within the iOS folder and launch the project.
 ## Software Architecture
-!(Software Architecture)[SoftwareArch.png]
+![Software Architecture](SoftwareArch.png)
 ## Metrics
 
 ## Retrospective
