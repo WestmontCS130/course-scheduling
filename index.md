@@ -23,8 +23,3 @@ Number of new and existing defects by severity per iOS sprint where towards the 
 For javaScript on the web application we caluclated it to be ...
 ## Retrospective
 Overall our team did the best we could with the limited experience and time we had for this class project. Some things that went well was the management side of the team that kept our team focused on the tasks that required attention, which new tasks to tackle, and any concerns needed to be addressed. We've also been able to complete sprints on time which was an overall new experience using an agile format for this project. Some things that we could have done better was trying to assign more user stories to the sprints despite the lack of experience, time, and resources. Some things that have left us puzzeled after this class was the unfamiliar programming languages that we had little experience in. After this class, we'd like to come back to some of these concepts and mistakes and find new opportunities to improve in these areas. 
-
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
