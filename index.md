@@ -15,42 +15,11 @@ Also using gitHub, Sourcetree, and Heroku
 12 user stories per sprint
 ### Number of Defects by Severity per iOS Sprint
 Number of new and existing defects by severity per iOS sprint where towards the beginning we had no bugs but towards the end bugs became evident because of the attempts to implement functionality into the app. In general we did okay handling defects that never impede our progress in our sprints. Whether these defects have been solved or not our team has been able to navigate around the defects strategically to continue on making progress towards our goals in Course Scheduling.  
-
+### Cyclomatic Complexity
+For javaScript on the web application we caluclated it to be ...
 ## Retrospective
+Overall our team did the best we could with the limited experience and time we had for this class project. Some things that went well was the management side of the team that kept our team focused on the tasks that required attention, which new tasks to tackle, and any concerns needed to be addressed. We've also been able to complete sprints on time which was an overall new experience using an agile format for this project. Some things that we could have done better was trying to assign more user stories to the sprints despite the lack of experience, time, and resources. Some things that have left us puzzeled after this class was the unfamiliar programming languages that we had little experience in. After this class, we'd like to come back to some of these concepts and mistakes and find new opportunities to improve in these areas. 
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/WestmontCS130/course-scheduling/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/WestmontCS130/course-scheduling/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
