@@ -1,14 +1,3 @@
-## Introduction
-
-## Installation
-
-## Software Architecture
-
-## Metrics
-
-## Retrospective
-
-## Contact
 
 ## Welcome to GitHub Pages
 
