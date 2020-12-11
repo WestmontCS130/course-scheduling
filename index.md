@@ -5,9 +5,8 @@ In order to install this project navigate to our repository found in the Contact
 ## Video Demos
 ### Web App
 [Web Application Demo](https://drive.google.com/file/d/1_Jag5pcWctacURtfCAqtyOC7S4WEV7pl/view?usp=sharing)
-[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
 
-[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
+[![Web Application Demo](http://www.google.com.au/images/nav_logo7.png)](https://drive.google.com/file/d/1_Jag5pcWctacURtfCAqtyOC7S4WEV7pl/view?usp=sharing)
 ## Software Architecture
 ![Software Architecture](SoftwareArchitecture.png)
 ### iOS App  
