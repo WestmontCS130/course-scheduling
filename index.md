@@ -36,7 +36,7 @@ For javaScript on the web application and iOS on the mobile appication.
 Calculated Technical Debt for the web application.
 ### Test Coverage
 Calculated the total test coverage for the web application.
-![Test Coverage Metric](tests.png)
+![Test Coverage Metric](tests.PNG.png)
 ### Estimation Accuracy 
 Estimated the accuracy of our code among the codebase.
 ### Technical Debt
