@@ -1,98 +1,110 @@
 <!doctype html>
-<html class="westmontAir" lang="en">
-
+<html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create Schedule</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/site.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/site.css">
 
-    <title>Create Schedule</title>
+  <style>
+  #sortable1{
+    border: 1px solid rgb(0, 0, 0);
+    width: 45%;
+    list-style-type: none;
+    float: left;
+    padding: 15px;
+
+  }
+  #sortable2 {
+    border: 1px solid rgb(0, 0, 0);
+    width: 45%;
+    list-style-type: none;
+    float: right;
+    padding: 15px;
+  }
+  #sortable1 li, #sortable2 li {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable1, #sortable2" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+  </script>
 </head>
-
-<body class="westmontAir">
-    <h1 class="text-center">Create New Schedule</h1>
-    <hr>
-
+<body>
+    <h1 class="text-center">Create Schedule </h1>
+    <div>
+      <a href="home.html" type="button" float="right" class="btn btn-primary pull-right westmontRed">Back</a>
+      <a href="courseSite.html" type="button" float="right" class="btn btn-primary pull-right westmontRed">LogOut</a>
     </div>
-    </body>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script>
-      var yearObject = {
-       // document.getElementById("rName1")
-        "2021": {
-          "Spring": [document.getElementById("rName1")]
 
-          // "Spring": ["Links", "Images", "Tables", "Lists"],
-          // "Fall": ["Borders", "Margins", "Backgrounds", "Float"],
-        },
-        "2022": {
-          // "Spring": ["Variables", "Strings", "Arrays"],
-          // "Fall": ["SELECT", "UPDATE", "DELETE"]
-        }
-      }
-      window.onload = function() {
-        var yearSel = document.getElementById("year");
-        var semSel = document.getElementById("semester");
-        var classSel = document.getElementById("class");
-        for (var x in yearObject) {
-          yearSel.options[yearSel.options.length] = new Option(x, x);
-        }
-        yearSel.onchange = function() {
-          //empty Chapters- and Topics- dropdowns
-          classSel.length = 1;
-          semSel.length = 1;
-          //display correct values
-          for (var y in yearObject[this.value]) {
-            semSel.options[semSel.options.length] = new Option(y, y);
-          }
-        }
-        semSel.onchange = function() {
-          //empty Chapters dropdown
-          classSel.length = 1;
-          //display correct values
-          var z = yearObject[yearSel.value][this.value];
-          for (var i = 0; i < z.length; i++) {
-            classSel.options[classSel.options.length] = new Option(z[i], z[i]);
-          }
-        }
-      }
-      </script>
-      <body>
-      
-      <h1>Add Class</h1>
-      
-      <form name="form1" id="form1" action="/action_page.php">
-        <h2 class="btn btn-right westmontRed">Year: <select name="year" id="year">
-          <option value="" selected="selected">Select Year</option> </h2>
-        </select>
-        <br><br>
-      Semester: <select name="semester" id="semester">
-          <option value="" selected="selected">Select Semster</option>
-        </select>
-        <br><br>
-      Class: <select name="class" id="class">
-          <option value="" selected="selected">Select Class</option>
-        </select>
-        <br><br>
-        <input type="submit" value="Add Class">  
-      </form>
-    
-    </head>   
+<ul id="sortable1" class="connectedSortable">
+  <li class="ui-state-default">CS010 Desgin and Implementation of Solutions</li>
+  <li class="ui-state-default">CS015 Discrete Mathematics</li>
+  <li class="ui-state-default">Old Testament</li>
+  <li class="ui-state-default">World History in Christian Perspective</li>
+  <li class="ui-state-default">Reading Imaginative Literature</li>
+  <li class="ui-state-default">Exploring Physical Sciences</li>
+  <li class="ui-state-default">Fitness for Life</li>
+  <li class="ui-state-default">Physical Education Activity</li>
+  <li class="ui-state-default">CS030 Abstract Models for Concrete Problems</li>
+  <li class="ui-state-default">CS045 Computer Organization and Hardware Architecture</li>
+  <li class="ui-state-default">CS105 Programming Languages</li>
+  <li class="ui-state-default">CS120 Space Time and Perfect Algorithms</li>
+  <li class="ui-state-default">CS130 Software Development</li>
+  <li class="ui-state-default">CS195 Senior Seminar</li>
+  <li class="ui-state-default">CS Elective 1</li>
+  <li class="ui-state-default">CS Elective 2</li>
+  <li class="ui-state-default">CS Elective 3</li>
+  <li class="ui-state-default">CS Elective 4</li>
+  <li class="ui-state-default">CS Elective 5</li>
+  <li class="ui-state-default">CS Elective 6</li>
+  <li class="ui-state-default">New Testment</li>
+  <li class="ui-state-default">Introduction to Christian Doctrine</li>
+  <li class="ui-state-default">Philisophical Reflections</li>
+  <li class="ui-state-default">World History in Christian Perspective</li>
+  <li class="ui-state-default">Read Imaginative Lit</li>
+  <li class="ui-state-default">Physical Sciences</li>
+  <li class="ui-state-default">Life Sciences</li>
+  <li class="ui-state-default">Reasoning Abstractly</li>
+  <li class="ui-state-default">Working Artistically</li>
+  <li class="ui-state-default">Thinking Globally</li>
+  <li class="ui-state-default">Thinking Historically</li>
+  <li class="ui-state-default">Understanding Society</li>
+  <li class="ui-state-default">Modern/Foreign Language</li>
+  <li class="ui-state-default">Physical Activity 1</li>
+  <li class="ui-state-default">Physical Activity 2</li>
+  <li class="ui-state-default">Physical Activity 3</li>
 
-  </body>
+</ul>
+ 
 
+<ul id="sortable2" class="connectedSortable">
+  <li class="ui-state-highlight"><b>Fall 2020</b></li>
+  <li class="ui-state-highlight"><b>Spring 2021</b></li>
+  <li class="ui-state-highlight"><b>Fall 2021</b></li>
+  <li class="ui-state-highlight"><b>Spring 2022</b></li>
+  <li class="ui-state-highlight"><b>Fall 2022</b></li>
+  <li class="ui-state-highlight"><b>Spring 2023</b></li>
+  <li class="ui-state-highlight"><b>Fall 2023</b></li>
+  <li class="ui-state-highlight"><b>Spring 2024</b></li>
+</ul>
+ 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/site.js"></script>
-    <script src="js/viewSchedule.js"></script>
-
+ 
+</body>
 </html>
