@@ -4,11 +4,8 @@ Students struggle to create schedules. Course Planner is the solution. Through a
 In order to install this project navigate to our repository found in the Contact section below. Next, clone the repo on your local computer. To access the web side of our software locate courseSite.html and open it with your web browser. To access the app use xcode and navigate within the iOS folder and launch the project.
 ## Video Demos
 ### Web App
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true">
-    <source src="webDemo.mp4" type="video/mp4">
-  </video>
-</figure>
+[![Web Application Demo]({image-url})]({https://drive.google.com/file/d/1_Jag5pcWctacURtfCAqtyOC7S4WEV7pl/view?usp=sharing} "Web Application Demo")
+
 ## Software Architecture
 ![Software Architecture](SoftwareArchitecture.png)
 ### iOS App  
