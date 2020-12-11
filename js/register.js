@@ -29,10 +29,10 @@ $(document).ready(function() {
             crossDomain: true,
             contentType: "application/json; charset=utf-8",
             success: function(data) {
-            window.location.href = "courseSite.html";
+            window.location.href = "home.html";
 
                 console.log(data);
-                alert("Registration successful! \nPhone Number: " +phoneNumber +"\nPassword: " +password +"\nPlease click OK to continue to the login page")
+                alert("Registration successful! \nPhone Number: " +phoneNumber +"\nPassword: " +password +"\nClick OK to login")
             },          
             error: function(request, error) {
                 console.log("Error:");
