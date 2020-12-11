@@ -2,13 +2,6 @@
 
 $(document).ready(function() {
 
-    // alert('Hello Class Schedule');
-    //$('.phone_us').mask('000-000-0000');
-
-
-    // $("#viewCS").click(function() {
-        // alert('Working?');
-
         // This makes the ajax call and fires a success or error function defined inline.
         $.ajax({
             url: 'https://class-scheduling-api.herokuapp.com/years',
@@ -138,6 +131,5 @@ $(document).ready(function() {
                 alert("Request: " + JSON.stringify(request));
             }
         });
-    // });
 });
 
