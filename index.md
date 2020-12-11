@@ -1,7 +1,7 @@
 ## Introduction
 Students struggle to create schedules. Course Planner is the solution. Through a website or an app, Course Planner allows you to login to your unique account, view a list of your major’s requirements, and create a schedule fit to you. Course Planner- Create your own path.
 ## Installation
-In order to install this project navigate to our repository found in the Contact section below. Next, clone the repo on your local computer. To access the web side of our software locate courseSite.html and open it with your web browser or you can access it here https://course-scheduling-2020.herokuapp.com/courseSite.html. To access the app use xcode and navigate within the iOS folder and launch the project.
+In order to install this project navigate to our repository found in the Contact section below. Next, clone the repo on your local computer. To access the web side of our software locate courseSite.html and open it with your web browser or you can access it here (https://course-scheduling-2020.herokuapp.com/courseSite.html). To access the app use xcode and navigate within the iOS folder and launch the project.
 ## Video Demos
 ### Web App
 [![Web Application Demo](webdemoimg.png)](https://drive.google.com/file/d/1_Jag5pcWctacURtfCAqtyOC7S4WEV7pl/view?usp=sharing)
