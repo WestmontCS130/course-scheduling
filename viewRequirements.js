@@ -19,7 +19,6 @@ $(document).ready(function() {
                 var html_to_append = ''; 
                 html_to_append += '<table>'
                 html_to_append += '<tr>'
-                html_to_append += '<th>Year</th>'
                 html_to_append += '<th>Name</th>'
                 html_to_append += '</tr>'
 
@@ -28,14 +27,12 @@ $(document).ready(function() {
                 $.each(data, function(i, requirementItem) {
 
                     //visit each element in the database, pull out 'requirementItem'
-                    console.log(requirementItem.idRequirements); 
                     console.log(requirementItem.RequirementName);
                 
                     //conditional statement that allows function to traverse thorugh the database and append requirement information
                 
                     if (requirementItem.RequirementName != null) {
                     html_to_append += '<tr>'
-                    html_to_append += '<td>' + requirementItem.idRequirements + '</td>'
                     html_to_append += '<td>' + requirementItem.RequirementName + '</td>'
                     html_to_append += '</tr>'
                     }
