@@ -17,22 +17,42 @@
             border:1px;
             background-color:solid gray;  
             padding:2px; 
+            text-align: center;
+            display: inline-block;
+            list-style-type: none;
         }
         .graystyle {   color:gray; }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 99%;
+        }
+        
+        tr {
+            background-color: rgb(238, 235, 233);
+            border: 2px solid #dddddd;
+            text-align: left;
+        }
     </style>
 </head>
 
 <body>
     <h1 class="text-center">Home Page</h1>
 
-        <span id="navbar">
-        <a href="courseRequirements.html" type="button" class="btn btn-primary westmontRed">Course Requirements</a>
-        <a href="classSchedule.html" type="button" class="btn btn-primary westmontRed">4 Year plan</a>
-        <a href="createSchedule.html" type="button" class="btn btn-primary westmontRed">Create Schedule</a>
-        <a href="courseSite.html" type="button" class="btn btn-primary westmontRed">Logout</a>
-        </span>
-    
+    <table>
+        <tr>
+            <th>BS Computer Science Schedule</th>
+            <th></th>
 
+        <span id="navbar">
+            <td><a href="courseRequirements.html" type="button" class="btn btn-primary westmontRed">Course Requirements</a></td>
+            <td><a href="4YearPlanPage.html" type="button" class="btn btn-primary westmontRed">4 Year plan</a></td>
+            <td><a href="createScheduleTest2.html" type="button" class="btn btn-primary westmontRed">Create Schedule</a></td>
+            <td><a href="courseSite.html" type="button" class="btn btn-primary westmontRed">Logout</a></td>
+        </span>
+        </tr>
+    </table>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
